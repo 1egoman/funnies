@@ -6,4 +6,9 @@
 [![Dependency Status](https://david-dm.org/1egoman/funnies.svg)](https://david-dm.org/1egoman/funnies)
 [![devDependency Status](https://david-dm.org/1egoman/funnies/dev-status.svg)](https://david-dm.org/1egoman/funnies#info=devDependencies)
 
-Make user's laugh when your app is loading.
+```javascript
+let funnies = new Funnies();
+funnies.message(); // "Reticulating Splines..."
+funnies.message(); // "Generating witty dialog..."
+funnies.message(); // "Go ahead -- hold your breath!"
+```
