@@ -1,6 +1,6 @@
 {
   "name": "funnies",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Make user's laugh when your app is loading.",
   "main": "dist/index.js",
   "scripts": {
