@@ -5,7 +5,7 @@ export default [
   "Spinning violently around the y-axis...",
   "Tokenizing real life...",
   "Bending the spoon...",
-  "Filtering morale..."
+  "Filtering morale...",
   "Don't think of purple hippos...",
   "We need a new fuse...",
   "Have a good day.",

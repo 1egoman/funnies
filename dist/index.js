@@ -59,7 +59,9 @@ var Funnies = (function () {
   }, {
     key: 'messageHTML',
     value: function messageHTML() {
-      return ('<div class="loading">\n      <img src="spinner.gif" />\n      <span class="loading-funny">' + this.message() + '</span>\n    </div>').replace(/(\r?\n|^ +)/gm, '');
+      var message = this.message();
+      var html = ('<div class="loading">\n      <img src="spinner.gif" />\n      <span class="loading-funny">' + message + '</span>\n    </div>').replace(/(\r?\n|^ +)/gm, '');
+      return { message: message, html: html };
     }
   }]);
 
