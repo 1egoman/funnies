@@ -48,7 +48,6 @@ createLintTask('lint-test', ['test/**/*.js'])
 
 // Build two versions of the library
 gulp.task('build', ['lint-src', 'clean'], function() {
-
   // Create our output directory
   mkdirp.sync(destinationFolder);
   return gulp.src('src/**/*.js')
