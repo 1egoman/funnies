@@ -1,4 +1,5 @@
-# funnies
+![Funnies: Turn "Please Wait" into a smile.](assets/funnies.svg)
+
 [![Travis build status](http://img.shields.io/travis/1egoman/funnies.svg?style=flat)](https://travis-ci.org/1egoman/funnies)
 [![Code Climate](https://codeclimate.com/github/1egoman/funnies/badges/gpa.svg)](https://codeclimate.com/github/1egoman/funnies)
 [![Test Coverage](https://codeclimate.com/github/1egoman/funnies/badges/coverage.svg)](https://codeclimate.com/github/1egoman/funnies)
