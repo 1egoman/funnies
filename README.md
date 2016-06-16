@@ -6,9 +6,15 @@
 [![Dependency Status](https://david-dm.org/1egoman/funnies.svg)](https://david-dm.org/1egoman/funnies)
 [![devDependency Status](https://david-dm.org/1egoman/funnies/dev-status.svg)](https://david-dm.org/1egoman/funnies#info=devDependencies)
 
+# In Javascript
 ```javascript
 let funnies = new Funnies();
 funnies.message(); // "Reticulating Splines..."
 funnies.message(); // "Generating witty dialog..."
 funnies.message(); // "Go ahead -- hold your breath!"
+```
+
+## In JSX
+```jsx
+ReactDOM.render(<FunniesComponent />, $("body"));
 ```

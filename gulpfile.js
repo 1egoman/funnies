@@ -22,37 +22,13 @@ function jshintNotify(file) {
   return file.jshint.success ? false : 'JSHint failed';
 }
 
-function jscsNotify(file) {
-  if (!file.jscs) { return; }
-  return file.jscs.success ? false : 'JSCS failed';
-}
-
-function createLintTask(taskName, files) {
-  gulp.task(taskName, function() {
-    return gulp.src(files)
-      .pipe($.plumber())
-      .pipe($.jshint())
-      .pipe($.jshint.reporter('jshint-stylish'))
-      .pipe($.notify(jshintNotify))
-      .pipe($.jscs())
-      .pipe($.notify(jscsNotify))
-      .pipe($.jshint.reporter('fail'));
-  });
-}
-
-// Lint our source code
-createLintTask('lint-src', ['src/**/*.js'])
-
-// Lint our test code
-createLintTask('lint-test', ['test/**/*.js'])
-
 // Build two versions of the library
-gulp.task('build', ['lint-src', 'clean'], function() {
+gulp.task('build', ['clean'], function() {
   // Create our output directory
   mkdirp.sync(destinationFolder);
   return gulp.src('src/**/*.js')
     .pipe($.plumber())
-    .pipe($.babel({ blacklist: ['useStrict'] }))
+    .pipe($.babel({ blacklist: ['useStrict'], presets: ["es2015", "react"]}))
     .pipe(gulp.dest(destinationFolder));
 });
 
@@ -78,12 +54,9 @@ gulp.task('coverage', function(done) {
 });
 
 
-// Lint and run our tests
-gulp.task('test', ['lint-src', 'lint-test'], test);
-
 // Run the headless unit tests as you make changes.
-gulp.task('watch', ['test'], function() {
-  gulp.watch(['src/**/*', 'test/**/*', 'package.json', '**/.jshintrc', '.jscsrc'], ['test']);
+gulp.task('watch', [], function() {
+  gulp.watch(['src/**/*', 'test/**/*', 'package.json'], ['test']);
 });
 
 // An alias of test

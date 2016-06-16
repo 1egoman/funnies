@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import React from 'react';
 import defaultMessages from './funnies';
 
 export default class Funnies {
@@ -33,10 +34,37 @@ export default class Funnies {
 
   messageHTML() {
     let message = this.message();
-    let html = `<div class="loading">
-      <img src="spinner.gif" />
+    let html = `<div class="funnies">
       <span class="loading-funny">${message}</span>
     </div>`.replace(/(\r?\n|^ +)/gm, '');
     return {message, html};
   }
 }
+
+
+export class FunniesComponent extends React.Component {
+  constructor(props) {
+    super();
+    this.state = {};
+    this.state.funnies = new Funnies(props.customMessages);
+    this.state.message = this.state.funnies.message();
+
+    // periodically, update the message to be something else
+    this.state.interval = setInterval(() => {
+      this.setState({ message: this.state.funnies.message() });
+    }, props.duration);
+
+    // style for the funnies text
+    this.funniesStyle = {
+      transition: "1s all ease",
+      color: "#888",
+      padding: "1em",
+    };
+  }
+  render() {
+    return <div className="funnies">
+      <span className="funnies-text" style={this.funniesStyle}>{this.state.message}</span>
+    </div>;
+  }
+}
+FunniesComponent.defaultProps = {interval: 8000, customMessages: []};
