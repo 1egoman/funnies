@@ -46,7 +46,7 @@ export default class Funnies {
 let styles = {
   funnies: {
     background: "#EEE",
-    padding: "1em",
+    paddingTop: "0.5em",
     position: "relative",
     height: "7.2em",
     fontFamily: "Helvetica, Arial, sans-serif",
@@ -132,3 +132,15 @@ export class FunniesComponent extends React.Component {
   }
 }
 FunniesComponent.defaultProps = {interval: 8000, customMessages: []};
+
+// for browser support
+if (typeof window !== 'undefined') {
+  window.Funnies = Funnies;
+  window.FunniesComponent = FunniesComponent;
+}
+// for AMD
+if (typeof define === 'function' && define.amd) {
+  define([], function() {
+    return {Funnies, FunniesComponent};
+  });
+}

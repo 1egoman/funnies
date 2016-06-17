@@ -92,7 +92,7 @@ exports.default = Funnies;
 var styles = {
   funnies: {
     background: "#EEE",
-    padding: "1em",
+    paddingTop: "0.5em",
     position: "relative",
     height: "7.2em",
     fontFamily: "Helvetica, Arial, sans-serif",
@@ -202,3 +202,15 @@ var FunniesComponent = exports.FunniesComponent = function (_React$Component) {
 }(_react2.default.Component);
 
 FunniesComponent.defaultProps = { interval: 8000, customMessages: [] };
+
+// for browser support
+if (typeof window !== 'undefined') {
+  window.Funnies = Funnies;
+  window.FunniesComponent = FunniesComponent;
+}
+// for AMD
+if (typeof define === 'function' && define.amd) {
+  define([], function () {
+    return { Funnies: Funnies, FunniesComponent: FunniesComponent };
+  });
+}
