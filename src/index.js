@@ -39,3 +39,8 @@ export default class Funnies {
     return {message, html};
   }
 }
+
+// for browser support
+if (typeof window !== 'undefined') {
+  window.Funnies = Funnies;
+}
