@@ -76,9 +76,6 @@ var Funnies = function () {
   return Funnies;
 }();
 
-// for non-es2015 module people
-
-
 exports.default = Funnies;
 exports.Funnies = Funnies;
 exports.FunniesComponent = _react2.default;

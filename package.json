@@ -17,10 +17,14 @@
     "funny",
     "funnies",
     "loading message",
+    "funny loading message",
     "loading",
     "funny loading",
     "jeopardy",
-    "thinking"
+    "thinking",
+    "react",
+    "react-loading",
+    "react-funny"
   ],
   "author": "Ryan Gaus",
   "license": "MIT",
