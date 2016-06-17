@@ -15,6 +15,9 @@ funnies.message(); // "Go ahead -- hold your breath!"
 ```
 
 ## In JSX
+![React rendering](https://cdn.rawgit.com/1egoman/funnies/master/assets/normal-react.svg)
 ```jsx
-ReactDOM.render(<FunniesComponent />, $("body"));
+ReactDOM.render(<FunniesComponent />, node);
+ReactDOM.render(<FunniesComponent interval={1000} />, node); // a new message every second
+ReactDOM.render(<FunniesComponent customMessages={["You're too funny", "Thinking really hard..."]} />, node); // Add a few of your own messages
 ```
