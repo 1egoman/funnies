@@ -8,15 +8,18 @@
 
 # In Javascript
 ```javascript
+let FunniesComponent = require('funnies'); // or window.Funnies
 let funnies = new Funnies();
 funnies.message(); // "Reticulating Splines..."
 funnies.message(); // "Generating witty dialog..."
 funnies.message(); // "Go ahead -- hold your breath!"
+funnies.messageHTML(); // '<div class="funnies"><span class="loading-funnies">We need a new fuse...</span></div>'
 ```
 
 ## In JSX
 ![React rendering](https://raw.githubusercontent.com/1egoman/funnies/master/assets/normal-react.gif)
 ```jsx
+let FunniesComponent = require('funnies/react'); // or window.FunniesComponent
 ReactDOM.render(<FunniesComponent />, node);
 ReactDOM.render(<FunniesComponent interval={1000} />, node); // a new message every second
 ReactDOM.render(<FunniesComponent customMessages={["You're too funny", "Thinking really hard..."]} />, node); // Add a few of your own messages
