@@ -39,5 +39,5 @@ ReactDOM.render(<FunniesComponent customMessages={["You're too funny", "Thinking
   - Use Github's issue tracker.
 
 # Areas to improve
-- Angular bindings?
-- 
+
+- Angular bindings would be great.
