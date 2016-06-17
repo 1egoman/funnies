@@ -82,6 +82,18 @@ var Funnies = function () {
 
 exports.default = Funnies;
 
+
+var styles = {
+  funnies: {
+    background: "#EEE"
+  },
+  funniesText: {
+    transition: "1s all ease",
+    color: "#888",
+    padding: "1em"
+  }
+};
+
 var FunniesComponent = exports.FunniesComponent = function (_React$Component) {
   _inherits(FunniesComponent, _React$Component);
 
@@ -97,26 +109,24 @@ var FunniesComponent = exports.FunniesComponent = function (_React$Component) {
     // periodically, update the message to be something else
     _this3.state.interval = setInterval(function () {
       _this3.setState({ message: _this3.state.funnies.message() });
-    }, props.duration);
-
-    // style for the funnies text
-    _this3.funniesStyle = {
-      transition: "1s all ease",
-      color: "#888",
-      padding: "1em"
-    };
+    }, props.interval);
     return _this3;
   }
 
   _createClass(FunniesComponent, [{
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      clearTimeout(this.sate.interval);
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: 'funnies' },
+        { className: 'funnies', style: styles.funnies },
         _react2.default.createElement(
           'span',
-          { className: 'funnies-text', style: this.funniesStyle },
+          { className: 'funnies-text', style: styles.funniesText },
           this.state.message
         )
       );

@@ -41,6 +41,16 @@ export default class Funnies {
   }
 }
 
+let styles = {
+  funnies: {
+    background: "#EEE",
+  },
+  funniesText: {
+    transition: "1s all ease",
+    color: "#888",
+    padding: "1em",
+  }
+};
 
 export class FunniesComponent extends React.Component {
   constructor(props) {
@@ -52,18 +62,14 @@ export class FunniesComponent extends React.Component {
     // periodically, update the message to be something else
     this.state.interval = setInterval(() => {
       this.setState({ message: this.state.funnies.message() });
-    }, props.duration);
-
-    // style for the funnies text
-    this.funniesStyle = {
-      transition: "1s all ease",
-      color: "#888",
-      padding: "1em",
-    };
+    }, props.interval);
+  }
+  componentWillUnmount() {
+    clearTimeout(this.sate.interval);
   }
   render() {
-    return <div className="funnies">
-      <span className="funnies-text" style={this.funniesStyle}>{this.state.message}</span>
+    return <div className="funnies" style={styles.funnies}>
+      <span className="funnies-text" style={styles.funniesText}>{this.state.message}</span>
     </div>;
   }
 }

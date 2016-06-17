@@ -6,6 +6,7 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha test/unit/index.js --compilers js:babel-register",
     "build": "./node_modules/.bin/babel src/ -d dist/",
+    "release": "./node_modules/.bin/browserify src/ -o funnies.min.js -t [babelify] -t [uglifyify]",
     "coverage": "gulp coverage"
   },
   "repository": {
@@ -28,8 +29,10 @@
   },
   "homepage": "https://github.com/1egoman/funnies",
   "devDependencies": {
-    "babel": "^5.0.0",
+    "babel-cli": "^6.0.0",
     "babel-register": "^6.9.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
     "chai": "^2.0.0",
     "del": "^1.1.1",
     "gulp": "^3.8.10",
@@ -48,7 +51,8 @@
     "mocha": "^2.5.3",
     "react-addons-test-utils": "^15.1.0",
     "sinon": "^1.12.2",
-    "sinon-chai": "^2.7.0"
+    "sinon-chai": "^2.7.0",
+    "uglifyify": "^3.0.2"
   },
   "nodeBoilerplateOptions": {
     "mochaGlobals": [
