@@ -25,12 +25,15 @@ ReactDOM.render(<FunniesComponent customMessages={["You're too funny", "Thinking
 # Troubleshooting/FAQ
 
 - **Does this work in both the client and server-side?**
+
   Yes. Either include `funnies.min.js` within your page and use `window.Funnies`, or use node/browserify/webpack to require the module.
 
 - **Can I return a funny message within preformatted HTML?***
+
   Yes, try `funnies.messageHTML()`.
 
 - **I want to add a funny message!**
+
   Create a fork, add your message to `src/funnies.js`, then create a pull
   request.
 
