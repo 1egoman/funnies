@@ -15,7 +15,7 @@ funnies.message(); // "Go ahead -- hold your breath!"
 ```
 
 ## In JSX
-![React rendering](https://cdn.rawgit.com/1egoman/funnies/master/assets/normal-react.svg)
+![React rendering](https://raw.githubusercontent.com/1egoman/funnies/master/assets/normal-react.gif)
 ```jsx
 ReactDOM.render(<FunniesComponent />, node);
 ReactDOM.render(<FunniesComponent interval={1000} />, node); // a new message every second
