@@ -71,4 +71,10 @@ var Funnies = function () {
   return Funnies;
 }();
 
+// for browser support
+
+
 exports.default = Funnies;
+if (typeof window !== 'undefined') {
+  window.Funnies = Funnies;
+}

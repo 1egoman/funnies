@@ -146,12 +146,5 @@ FunniesComponent.defaultProps = { interval: 8000, customMessages: [] };
 
 // for browser support
 if (typeof window !== 'undefined') {
-  window.Funnies = _index2.default;
   window.FunniesComponent = FunniesComponent;
-}
-// for AMD
-if (typeof define === 'function' && define.amd) {
-  define([], function () {
-    return { Funnies: _index2.default, FunniesComponent: FunniesComponent };
-  });
 }
