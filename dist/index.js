@@ -19,6 +19,12 @@ var _funnies = require('./funnies');
 
 var _funnies2 = _interopRequireDefault(_funnies);
 
+var _reactAddonsCssTransitionGroup = require('react-addons-css-transition-group');
+
+var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
+
+var _radium = require('radium');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -85,12 +91,32 @@ exports.default = Funnies;
 
 var styles = {
   funnies: {
-    background: "#EEE"
+    background: "#EEE",
+    padding: "1em",
+    position: "relative",
+    height: "7.2em",
+    fontFamily: "Helvetica, Arial, sans-serif",
+    color: "#555"
   },
   funniesText: {
-    transition: "1s all ease",
-    color: "#888",
-    padding: "1em"
+    transition: "opacity 0.2s ease-in",
+    position: "absolute",
+    textAlign: "center",
+    width: "100%",
+    fontSize: "1em",
+
+    funniesEnter: { opacity: 0.01 },
+    funniesEnterActive: { opacity: 1.0 },
+    funniesLeave: {
+      opacity: 1.0
+    },
+    funniesLeaveActive: {
+      opacity: 0
+    }
+  },
+  funniesHeader: {
+    textAlign: "center",
+    fontSize: "2em"
   }
 };
 
@@ -114,9 +140,30 @@ var FunniesComponent = exports.FunniesComponent = function (_React$Component) {
   }
 
   _createClass(FunniesComponent, [{
+    key: 'cssTransitionStyles',
+    value: function cssTransitionStyles() {
+      return [_react2.default.createElement(_radium.Style, {
+        scopeSelector: '.funnies-text.funnies-enter',
+        rules: styles.funniesText.funniesEnter,
+        key: 0
+      }), _react2.default.createElement(_radium.Style, {
+        scopeSelector: '.funnies-text.funnies-enter-active',
+        rules: styles.funniesText.funniesEnterActive,
+        key: 1
+      }), _react2.default.createElement(_radium.Style, {
+        scopeSelector: '.funnies-text.funnies-leave',
+        rules: styles.funniesText.funniesLeave,
+        key: 2
+      }), _react2.default.createElement(_radium.Style, {
+        scopeSelector: '.funnies-text.funnies-leave-active',
+        rules: styles.funniesText.funniesLeaveActive,
+        key: 3
+      })];
+    }
+  }, {
     key: 'componentWillUnmount',
     value: function componentWillUnmount() {
-      clearTimeout(this.sate.interval);
+      clearTimeout(this.state.interval);
     }
   }, {
     key: 'render',
@@ -124,10 +171,28 @@ var FunniesComponent = exports.FunniesComponent = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'funnies', style: styles.funnies },
+        this.cssTransitionStyles(),
         _react2.default.createElement(
-          'span',
-          { className: 'funnies-text', style: styles.funniesText },
-          this.state.message
+          _reactAddonsCssTransitionGroup2.default,
+          {
+            transitionName: 'funnies',
+            transitionEnterTimeout: 200,
+            transitionLeaveTimeout: 200
+          },
+          _react2.default.createElement(
+            'h1',
+            { style: styles.funniesHeader },
+            'Loading...'
+          ),
+          _react2.default.createElement(
+            'span',
+            {
+              className: 'funnies-text',
+              style: styles.funniesText,
+              key: this.state.message
+            },
+            this.state.message
+          )
         )
       );
     }

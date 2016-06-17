@@ -1,6 +1,8 @@
 import _ from 'lodash';
 import React from 'react';
 import defaultMessages from './funnies';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import {Style} from 'radium';
 
 export default class Funnies {
   constructor(messages=[]) {
@@ -44,12 +46,32 @@ export default class Funnies {
 let styles = {
   funnies: {
     background: "#EEE",
+    padding: "1em",
+    position: "relative",
+    height: "7.2em",
+    fontFamily: "Helvetica, Arial, sans-serif",
+    color: "#555",
   },
   funniesText: {
-    transition: "1s all ease",
-    color: "#888",
-    padding: "1em",
-  }
+    transition: "opacity 0.2s ease-in",
+    position: "absolute",
+    textAlign: "center",
+    width: "100%",
+    fontSize: "1em",
+
+    funniesEnter: { opacity: 0.01 },
+    funniesEnterActive: { opacity: 1.0 },
+    funniesLeave: {
+      opacity: 1.0,
+    },
+    funniesLeaveActive: {
+      opacity: 0,
+    },
+  },
+  funniesHeader: {
+    textAlign: "center",
+    fontSize: "2em",
+  },
 };
 
 export class FunniesComponent extends React.Component {
@@ -64,12 +86,48 @@ export class FunniesComponent extends React.Component {
       this.setState({ message: this.state.funnies.message() });
     }, props.interval);
   }
+  cssTransitionStyles() {
+    return [
+      <Style
+        scopeSelector=".funnies-text.funnies-enter"
+        rules={styles.funniesText.funniesEnter}
+        key={0}
+      />,
+      <Style
+        scopeSelector=".funnies-text.funnies-enter-active"
+        rules={styles.funniesText.funniesEnterActive}
+        key={1}
+      />,
+      <Style
+        scopeSelector=".funnies-text.funnies-leave"
+        rules={styles.funniesText.funniesLeave}
+        key={2}
+      />,
+      <Style
+        scopeSelector=".funnies-text.funnies-leave-active"
+        rules={styles.funniesText.funniesLeaveActive}
+        key={3}
+      />,
+    ];
+  }
   componentWillUnmount() {
-    clearTimeout(this.sate.interval);
+    clearTimeout(this.state.interval);
   }
   render() {
     return <div className="funnies" style={styles.funnies}>
-      <span className="funnies-text" style={styles.funniesText}>{this.state.message}</span>
+      {this.cssTransitionStyles()}
+      <ReactCSSTransitionGroup
+        transitionName="funnies"
+        transitionEnterTimeout={200}
+        transitionLeaveTimeout={200}
+      >
+        <h1 style={styles.funniesHeader}>Loading...</h1>
+        <span
+          className="funnies-text"
+          style={styles.funniesText}
+          key={this.state.message}
+        >{this.state.message}</span>
+      </ReactCSSTransitionGroup>
     </div>;
   }
 }

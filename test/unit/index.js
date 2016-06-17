@@ -75,13 +75,14 @@ describe('Funnies Component', function() {
     });
 
     it('should change the funny text every interval', function() {
-      let component = TestUtils.renderIntoDocument(<FunniesComponent interval={100} />);
+      let component = TestUtils.renderIntoDocument(<FunniesComponent interval={1000} />);
       let text = TestUtils.findRenderedDOMComponentWithClass(component, "funnies-text");
       let firstMessage = text.textContent.slice();
-      assert.deepEqual(text.textContent, component.state.message);
+      assert.equal(text.textContent, component.state.message);
       
       // advance the clock
-      clock.tick(100);
+      clock.tick(1500);
+      text = TestUtils.findRenderedDOMComponentWithClass(component, "funnies-text");
       assert.notEqual(text.textContent, firstMessage);
     });
   });
