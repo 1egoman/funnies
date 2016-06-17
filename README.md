@@ -16,7 +16,7 @@ funnies.message(); // "Go ahead -- hold your breath!"
 ## React Component
 ![React rendering](https://raw.githubusercontent.com/1egoman/funnies/master/assets/normal-react.gif)
 ```jsx
-let FunniesComponent = require('funnies/react'); // or window.FunniesComponent
+let FunniesComponent = require('funnies/react');
 ReactDOM.render(<FunniesComponent />, node);
 ReactDOM.render(<FunniesComponent interval={1000} />, node); // a new message every second
 ReactDOM.render(<FunniesComponent customMessages={["You're too funny", "Thinking really hard..."]} />, node); // Add a few of your own messages
@@ -25,7 +25,7 @@ ReactDOM.render(<FunniesComponent customMessages={["You're too funny", "Thinking
 # Troubleshooting/FAQ
 
 - **Does this work in both the client and server-side?**
-  Yes. Either include `funnies.min.js` within your page and use `window.Funnies`/`window.FunniesComponent`, or use node/browserify/webpack to require the module.
+  Yes. Either include `funnies.min.js` within your page and use `window.Funnies`, or use node/browserify/webpack to require the module.
 
 - **Can I return a funny message within preformatted HTML?***
   Yes, try `funnies.messageHTML()`.
