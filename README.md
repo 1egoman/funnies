@@ -4,17 +4,16 @@
 [![Dependency Status](https://david-dm.org/1egoman/funnies.svg)](https://david-dm.org/1egoman/funnies)
 [![devDependency Status](https://david-dm.org/1egoman/funnies/dev-status.svg)](https://david-dm.org/1egoman/funnies#info=devDependencies)
 
-# In Javascript
+# Usage
 ```javascript
 let FunniesComponent = require('funnies'); // or window.Funnies
 let funnies = new Funnies();
 funnies.message(); // "Reticulating Splines..."
 funnies.message(); // "Generating witty dialog..."
 funnies.message(); // "Go ahead -- hold your breath!"
-funnies.messageHTML(); // '<div class="funnies"><span class="loading-funnies">We need a new fuse...</span></div>'
 ```
 
-## In JSX
+## React Component
 ![React rendering](https://raw.githubusercontent.com/1egoman/funnies/master/assets/normal-react.gif)
 ```jsx
 let FunniesComponent = require('funnies/react'); // or window.FunniesComponent
@@ -22,3 +21,23 @@ ReactDOM.render(<FunniesComponent />, node);
 ReactDOM.render(<FunniesComponent interval={1000} />, node); // a new message every second
 ReactDOM.render(<FunniesComponent customMessages={["You're too funny", "Thinking really hard..."]} />, node); // Add a few of your own messages
 ```
+
+# Troubleshooting/FAQ
+
+- **Does this work in both the client and server-side?**
+  Yes. Either include `funnies.min.js` within your page and use `window.Funnies`/`window.FunniesComponent`, or use node/browserify/webpack to `require` the module.
+
+- **Can I return a funny message within preformatted HTML?***
+  Yes, try `funnies.messageHTML()`.
+
+- **I want to add a funny message!**
+  Create a fork, add your message to `src/funnies.js`, then create a pull
+  request.
+
+- **Something isn't working properly.**
+  - Send me a tweet `@rgausnet` and I'll help you out asap.
+  - Use Github's issue tracker.
+
+# Areas to improve
+- Angular bindings?
+- 
