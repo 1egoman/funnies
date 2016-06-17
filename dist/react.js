@@ -143,8 +143,3 @@ var FunniesComponent = function (_React$Component) {
 exports.default = FunniesComponent;
 
 FunniesComponent.defaultProps = { interval: 8000, customMessages: [] };
-
-// for browser support
-if (typeof window !== 'undefined') {
-  window.FunniesComponent = FunniesComponent;
-}

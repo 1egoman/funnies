@@ -3,6 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.FunniesComponent = exports.Funnies = exports.default = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -13,6 +14,10 @@ var _lodash2 = _interopRequireDefault(_lodash);
 var _funnies = require('./funnies');
 
 var _funnies2 = _interopRequireDefault(_funnies);
+
+var _react = require('./react');
+
+var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -71,10 +76,16 @@ var Funnies = function () {
   return Funnies;
 }();
 
-// for browser support
+// for non-es2015 module people
 
 
 exports.default = Funnies;
+exports.Funnies = Funnies;
+exports.FunniesComponent = _react2.default;
+
+// for browser support
+
 if (typeof window !== 'undefined') {
   window.Funnies = Funnies;
+  window.FunniesComponent = _react2.default;
 }

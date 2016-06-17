@@ -2,7 +2,7 @@ import _ from 'lodash';
 import defaultMessages from './funnies';
 import FunniesComponent from './react';
 
-export default class Funnies {
+class Funnies {
   constructor(messages=[]) {
     this.messages = defaultMessages.concat(messages);
 
@@ -41,9 +41,11 @@ export default class Funnies {
   }
 }
 
-// for non-es2015 module people
-export Funnies;
-export FunniesComponent;
+export {
+  Funnies as default,
+  Funnies,
+  FunniesComponent,
+};
 
 // for browser support
 if (typeof window !== 'undefined') {
