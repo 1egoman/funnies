@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import defaultMessages from './funnies';
+import FunniesComponent from './react';
 
 export default class Funnies {
   constructor(messages=[]) {
@@ -40,7 +41,12 @@ export default class Funnies {
   }
 }
 
+// for non-es2015 module people
+export Funnies;
+export FunniesComponent;
+
 // for browser support
 if (typeof window !== 'undefined') {
   window.Funnies = Funnies;
+  window.FunniesComponent = FunniesComponent;
 }
