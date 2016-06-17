@@ -1,4 +1,5 @@
-import {default as Funnies, FunniesComponent} from '../../src/index';
+import Funnies from '../../src/index';
+import FunniesComponent from '../../src/react';
 import TestUtils from 'react-addons-test-utils';
 import React from 'react';
 import assert from 'assert';
