@@ -12,15 +12,6 @@ funnies.message(); // "Reticulating Splines..."
 funnies.message(); // "Generating witty dialog..."
 funnies.message(); // "Go ahead -- hold your breath!"
 ```
-## jQuery Example
-```javascript
-import $ from 'jquery';
-import Funnies from 'funnies';
-
-let funnies = new Funnies();
-$("element").text(funnies.message());
-```
-
 ## React Component
 ![React rendering](https://raw.githubusercontent.com/1egoman/funnies/master/assets/normal-react.gif)
 ```jsx
@@ -29,6 +20,15 @@ ReactDOM.render(<FunniesComponent />, node);
 ReactDOM.render(<FunniesComponent interval={1000} />, node); // a new message every second
 ReactDOM.render(<FunniesComponent customMessages={["You're too funny", "Thinking really hard..."]} />, node); // Add a few of your own messages
 ```
+## jQuery
+```javascript
+import $ from 'jquery';
+import Funnies from 'funnies';
+
+let funnies = new Funnies();
+$("element").text(funnies.message());
+```
+
 
 # Troubleshooting/FAQ
 
