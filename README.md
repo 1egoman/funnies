@@ -12,6 +12,14 @@ funnies.message(); // "Reticulating Splines..."
 funnies.message(); // "Generating witty dialog..."
 funnies.message(); // "Go ahead -- hold your breath!"
 ```
+# JQuery Example
+```javascript
+import $ from 'jquery';
+import Funnies from 'funnies';
+
+let funnies = new Funnies();
+$("element").text(funnies.message());
+```
 
 ## React Component
 ![React rendering](https://raw.githubusercontent.com/1egoman/funnies/master/assets/normal-react.gif)
