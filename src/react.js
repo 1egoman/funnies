@@ -42,9 +42,11 @@ export default class FunniesComponent extends React.Component {
     this.state.message = this.state.funnies.message();
 
     // periodically, update the message to be something else
-    this.state.interval = setInterval(() => {
-      this.setState({ message: this.state.funnies.message() });
-    }, props.interval);
+    if (props.interval > 0) {
+      this.state.interval = setInterval(() => {
+        this.setState({ message: this.state.funnies.message() });
+      }, props.interval);
+    }
   }
   cssTransitionStyles() {
     return [

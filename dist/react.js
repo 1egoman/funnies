@@ -72,9 +72,11 @@ var FunniesComponent = function (_React$Component) {
     _this.state.message = _this.state.funnies.message();
 
     // periodically, update the message to be something else
-    _this.state.interval = setInterval(function () {
-      _this.setState({ message: _this.state.funnies.message() });
-    }, props.interval);
+    if (props.interval > 0) {
+      _this.state.interval = setInterval(function () {
+        _this.setState({ message: _this.state.funnies.message() });
+      }, props.interval);
+    }
     return _this;
   }
 
