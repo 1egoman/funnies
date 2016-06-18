@@ -12,7 +12,7 @@ funnies.message(); // "Reticulating Splines..."
 funnies.message(); // "Generating witty dialog..."
 funnies.message(); // "Go ahead -- hold your breath!"
 ```
-## JQuery Example
+## jQuery Example
 ```javascript
 import $ from 'jquery';
 import Funnies from 'funnies';
