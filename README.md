@@ -21,12 +21,12 @@ ReactDOM.render(<FunniesComponent interval={1000} />, node); // a new message ev
 ReactDOM.render(<FunniesComponent customMessages={["You're too funny", "Thinking really hard..."]} />, node); // Add a few of your own messages
 ```
 ## jQuery
+Odan wrote a great [jQuery plugin](https://github.com/odan/funnies-jquery-plugin) for Funnies!
 ```javascript
 import $ from 'jquery';
-import Funnies from 'funnies';
+// (include js/jquery.funnies.js)
 
-let funnies = new Funnies();
-$("element").text(funnies.message());
+$('element').funnies();
 ```
 
 
