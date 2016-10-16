@@ -11,6 +11,7 @@ gulp.task('default', () => {
 
 gulp.task('production', () => {
   browserify('./src/index.js')
+    .transform('envify', {global: true, _: 'purge', NODE_ENV: 'production'})
     .transform('babelify', {presets: ['es2015', 'react']})
     .transform('uglifyify', {global: true})
     .bundle()
