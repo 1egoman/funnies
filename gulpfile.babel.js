@@ -15,5 +15,5 @@ gulp.task('production', () => {
     .transform('babelify', {presets: ['es2015', 'react']})
     .transform('uglifyify', {global: true})
     .bundle()
-    .pipe(fs.createWriteStream('./dist/bundle.js'));
+    .pipe(fs.createWriteStream('./dist/bundle.min.js'));
 });
