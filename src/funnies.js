@@ -59,5 +59,6 @@ export default [
   "Looking for exact change",
   "All your web browser are belong to us",
   "Should have used a compiler language...",
+  "I'm glad you trust in Internet Explorer...",
   "Is this Windows?"
 ];
