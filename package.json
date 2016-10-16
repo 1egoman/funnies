@@ -34,6 +34,8 @@
   "homepage": "https://github.com/1egoman/funnies",
   "devDependencies": {
     "babel-cli": "^6.0.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
     "babel-register": "^6.9.0",
     "babelify": "^7.3.0",
     "browserify": "^13.0.1",
