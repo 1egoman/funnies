@@ -73,5 +73,14 @@ export default [
   "Making sure all the i's have dots...",
   "Connecting Neurotoxin Storage Tank...",
   "Granting wishes...",
-  "We are not liable for any broken screens as a result of waiting."
+  "We are not liable for any broken screens as a result of waiting.",
+  "Stay awhile and listen..",
+  "You shall not pass! yet..",
+  "Load it and they will come",
+  "Convincing AI not to turn evil..",
+  "There is no spoon. Because we are not done loading it",
+  "Your left thumb points to the right and your right thumb points to the left.",
+  "How did you get here?",
+  "Wait, do you smell something burning?",
+  "Computing the secret to life, the universe, and everything.",
 ];
