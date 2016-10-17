@@ -81,4 +81,6 @@ export default [
   "How did you get here?",
   "Wait, do you smell something burning?",
   "Computing the secret to life, the universe, and everything.",
+  "Maybe we should go back to the earth...",
+  "The waiting betray you, because they belong to me!"
 ];
