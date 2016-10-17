@@ -71,6 +71,8 @@ export default [
   "Putting the icing on the cake. The cake is not a lie...",
   "Cleaning off the cobwebs...",
   "Making sure all the i's have dots...",
+  "Connecting Neurotoxin Storage Tank...",
+  "Granting wishes...",
   "We are not liable for any broken screens as a result of waiting.",
   "Stay awhile and listen..",
   "You shall not pass! yet..",
