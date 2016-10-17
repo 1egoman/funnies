@@ -71,5 +71,7 @@ export default [
   "Putting the icing on the cake. The cake is not a lie...",
   "Cleaning off the cobwebs...",
   "Making sure all the i's have dots...",
-  "We are not liable for any broken screens as a result of waiting."
+  "We are not liable for any broken screens as a result of waiting.",
+  "Discombobulating brain modules...",
+  "Ensuring that these are the droids your are looking for..."
 ];
