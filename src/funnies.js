@@ -72,9 +72,6 @@ export default [
   "Cleaning off the cobwebs...",
   "Making sure all the i's have dots...",
   "We are not liable for any broken screens as a result of waiting.",
-<<<<<<< HEAD
-  "A chest day a day, keeps the leg day away"
-=======
   "Stay awhile and listen..",
   "You shall not pass! yet..",
   "Load it and they will come",
@@ -84,5 +81,4 @@ export default [
   "How did you get here?",
   "Wait, do you smell something burning?",
   "Computing the secret to life, the universe, and everything.",
->>>>>>> master
 ];
