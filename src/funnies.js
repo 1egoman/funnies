@@ -81,4 +81,5 @@ export default [
   "How did you get here?",
   "Wait, do you smell something burning?",
   "Computing the secret to life, the universe, and everything.",
+  "Making America... great... again...",
 ];
