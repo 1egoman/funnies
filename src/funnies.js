@@ -71,6 +71,8 @@ export default [
   "Putting the icing on the cake. The cake is not a lie...",
   "Cleaning off the cobwebs...",
   "Making sure all the i's have dots...",
+  "Connecting Neurotoxin Storage Tank...",
+  "Granting wishes...",
   "We are not liable for any broken screens as a result of waiting.",
   "Stay awhile and listen..",
   "You shall not pass! yet..",
@@ -81,5 +83,15 @@ export default [
   "How did you get here?",
   "Wait, do you smell something burning?",
   "Computing the secret to life, the universe, and everything.",
+<<<<<<< HEAD
   "Making America... great... again...",
+=======
+  "Constructing additional pylons...",
+  "Roping some seaturtles...",
+  "Locating Jebediah Kerman...",
+  "We are not liable for any broken screens as a result of waiting.",
+  "Hello IT, have you tried turning it off and on again?",
+  "If you type Google into Google you can break the internet",
+  "Well, this is embarrassing."
+>>>>>>> 1egoman/master
 ];
