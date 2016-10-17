@@ -81,4 +81,5 @@ export default [
   "How did you get here?",
   "Wait, do you smell something burning?",
   "Computing the secret to life, the universe, and everything.",
+  "I'm glad you trust in Internet Explorer"
 ];
