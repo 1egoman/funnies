@@ -59,5 +59,13 @@ export default [
   "Looking for exact change",
   "All your web browser are belong to us",
   "Should have used a compiler language...",
-  "Is this Windows?"
+  "Is this Windows?",
+  "Adjusting flux capacitor...",
+  "Please wait until the sloth starts moving.",
+  "Don't break your screen yet!",
+  "I swear it's almost done.",
+  "Let's take a mindfulness minute...",
+  "Unicorns are at the end of this road, I promise.",
+  "Listening for the sound of one hand clapping...",
+  "We are not liable for any broken screens as a result of waiting."
 ];
