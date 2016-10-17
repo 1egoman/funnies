@@ -81,4 +81,8 @@ export default [
   "How did you get here?",
   "Wait, do you smell something burning?",
   "Computing the secret to life, the universe, and everything.",
+  "Constructing additional pylons...",
+  "Roping some seaturtles...",
+  "Locating Jebediah Kerman...",
+  "We are not liable for any broken screens as a result of waiting."
 ];
