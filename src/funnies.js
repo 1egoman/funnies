@@ -72,4 +72,8 @@ export default [
   "Cleaning off the cobwebs...",
   "Making sure all the i's have dots...",
   "We are not liable for any broken screens as a result of waiting."
+  "Time flies when you’re having fun.",
+  "Get some coffee and come back in ten minutes..",
+  "Spinning the hamster…",
+  "99 bottles of beer on the wall..",
 ];
