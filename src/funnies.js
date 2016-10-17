@@ -1,4 +1,5 @@
 export default [
+  "The Funnies",
   "Reticulating splines...",
   "Generating witty dialog...",
   "Swapping time and space...",
