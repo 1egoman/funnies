@@ -78,5 +78,7 @@ export default [
   "Convincing AI not to turn evil..",
   "There is no spoon. Because we are not done loading it",
   "Your left thumb points to the right and your right thumb points to the left.",
-  "How did you get here?"
+  "How did you get here?",
+  "Wait, do you smell something burning?",
+  "Computing the secret to life, the universe, and everything.",
 ];
