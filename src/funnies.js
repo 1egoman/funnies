@@ -81,4 +81,9 @@ export default [
   "How did you get here?",
   "Wait, do you smell something burning?",
   "Computing the secret to life, the universe, and everything.",
+  "AHHHH! Look behind you!",
+  "Loading AOL Online...",
+  "You've got mail!",
+  "Departing for Mars",
+  "Stack sizes matter"
 ];
