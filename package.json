@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha test/unit/index.js --compilers js:babel-register",
     "build": "babel src/ -d dist/",
-    "release": "browserify src/ -o funnies.min.js -t [babelify] -t [uglifyify]",
+    "release": "browserify src/index.js -o funnies.min.js -t [babelify] -t [uglifyify]",
     "prepublish": "npm run build && npm run release"
   },
   "repository": {
