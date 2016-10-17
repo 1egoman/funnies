@@ -6,11 +6,7 @@
   "scripts": {
     "test": "mocha test/unit/index.js --compilers js:babel-register",
     "build": "babel src/ -d dist/",
-<<<<<<< HEAD
-    "release": "browserify src/index.js -o funnies.min.js -t [babelify] -t [uglifyify]",
-=======
     "release": "browserify -g uglifyify src/ -t [babelify] -t [uglifyify] | uglifyjs -c unused,dead_code > funnies.min.js",
->>>>>>> just-words
     "prepublish": "npm run build && npm run release"
   },
   "repository": {
@@ -75,6 +71,7 @@
     "lodash": "^4.13.1",
     "radium": "^0.17.1",
     "react": "^15.1.0",
-    "react-addons-css-transition-group": "^15.1.0"
+    "react-addons-css-transition-group": "^15.1.0",
+    "uglifyjs": "^2.4.10"
   }
 }
