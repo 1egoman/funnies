@@ -12,7 +12,7 @@ const input = path.join(paths.src, 'index.js');
 const output = {
   dev: path.join(paths.dest, 'bundle.js'),
   prod: path.join(paths.dest, 'bundle.min.js'),
-}
+};
 
 gulp.task('default', () => {
   browserify(input)
