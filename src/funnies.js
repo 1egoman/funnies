@@ -68,4 +68,7 @@ export default [
   "Unicorns are at the end of this road, I promise.",
   "Listening for the sound of one hand clapping...",
   "We are not liable for any broken screens as a result of waiting."
+  "Grinding experience points...",
+  "One Mississippi...Two Mississippi...",
+  "Catching them all..."
 ];
