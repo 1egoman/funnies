@@ -83,9 +83,12 @@ export default [
   "How did you get here?",
   "Wait, do you smell something burning?",
   "Computing the secret to life, the universe, and everything.",
+  "Constructing additional pylons...",
+  "Roping some seaturtles...",
+  "Locating Jebediah Kerman...",
+  "We are not liable for any broken screens as a result of waiting.",
   "Hello IT, have you tried turning it off and on again?",
   "If you type Google into Google you can break the internet",
   "Well, this is embarrassing.",
   "Didn't know paint dried so quickly."
-
 ];
