@@ -83,9 +83,7 @@ export default [
   "How did you get here?",
   "Wait, do you smell something burning?",
   "Computing the secret to life, the universe, and everything.",
-<<<<<<< HEAD
   "Making America... great... again...",
-=======
   "Constructing additional pylons...",
   "Roping some seaturtles...",
   "Locating Jebediah Kerman...",
@@ -93,5 +91,4 @@ export default [
   "Hello IT, have you tried turning it off and on again?",
   "If you type Google into Google you can break the internet",
   "Well, this is embarrassing."
->>>>>>> 1egoman/master
 ];
