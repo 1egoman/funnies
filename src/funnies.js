@@ -58,4 +58,6 @@ export default [
   "I'm sorry Dave, I can't do that.",
   "Looking for exact change",
   "All your web browser are belong to us",
+  "Should have used a compiler language...",
+  "Is this Windows?"
 ];
