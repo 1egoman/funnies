@@ -1,12 +1,12 @@
 {
   "name": "funnies",
-  "version": "0.3.1",
+  "version": "1.0.0",
   "description": "Make user's laugh when your app is loading.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha test/unit/index.js --compilers js:babel-register",
-    "build": "./node_modules/.bin/babel src/ -d dist/",
-    "release": "./node_modules/.bin/browserify src/ -o funnies.min.js -t [babelify] -t [uglifyify]",
+    "test": "mocha test/unit/index.js --compilers js:babel-register",
+    "build": "babel src/ -d dist/",
+    "release": "NODE_ENV=production browserify -g uglifyify src/index.js -t [babelify] -t [uglifyify] | uglifyjs -c unused,dead_code > funnies.min.js",
     "prepublish": "npm run build && npm run release"
   },
   "repository": {
@@ -71,6 +71,7 @@
     "lodash": "^4.13.1",
     "radium": "^0.17.1",
     "react": "^15.1.0",
-    "react-addons-css-transition-group": "^15.1.0"
+    "react-addons-css-transition-group": "^15.1.0",
+    "uglifyjs": "^2.4.10"
   }
 }
