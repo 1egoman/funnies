@@ -67,5 +67,9 @@ export default [
   "Let's take a mindfulness minute...",
   "Unicorns are at the end of this road, I promise.",
   "Listening for the sound of one hand clapping...",
+  "Keeping all the 1's and removing all the 0's...",
+  "Putting the icing on the cake. The cake is not a lie...",
+  "Cleaning off the cobwebs...",
+  "Making sure all the i's have dots...",
   "We are not liable for any broken screens as a result of waiting."
 ];
