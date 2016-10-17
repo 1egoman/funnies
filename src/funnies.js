@@ -81,4 +81,7 @@ export default [
   "How did you get here?",
   "Wait, do you smell something burning?",
   "Computing the secret to life, the universe, and everything.",
+  "If I’m not back in five minutes, just wait longer.",
+  "Some days, you just can’t get rid of a bug!",
+  "We’re going to need a bigger boat.",
 ];
