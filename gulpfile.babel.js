@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import gulp from 'gulp';
 import browserify from 'browserify';
+import babel from 'gulp-babel';
 
 const paths = {
   src: './src',
@@ -28,4 +29,10 @@ gulp.task('production', () => {
     .transform('uglifyify', {global: true})
     .bundle()
     .pipe(fs.createWriteStream(output.prod));
+});
+
+gulp.task('babel', () => {
+  return gulp.src(path.join(paths.src, '**/*.js'))
+    .pipe(babel())
+    .pipe(gulp.dest(paths.dest))
 });
