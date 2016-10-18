@@ -91,5 +91,6 @@ export default [
   "Hello IT, have you tried turning it off and on again?",
   "If you type Google into Google you can break the internet",
   "Well, this is embarrassing.",
-  "Didn't know paint dried so quickly."
+  "Didn't know paint dried so quickly.",
+  "I didn't choose the engineering life. The engineering life chose me."
 ];
