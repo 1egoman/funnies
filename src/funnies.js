@@ -69,6 +69,8 @@ export default [
   "Putting the icing on the cake. The cake is not a lie...",
   "Cleaning off the cobwebs...",
   "Making sure all the i's have dots...",
+  "Connecting Neurotoxin Storage Tank...",
+  "Granting wishes...",
   "We are not liable for any broken screens as a result of waiting.",
   "Stay awhile and listen..",
   "Be careful not to step in the git-gui",
@@ -79,6 +81,7 @@ export default [
   "How did you get here?",
   "Wait, do you smell something burning?",
   "Computing the secret to life, the universe, and everything.",
+<<<<<<< HEAD
   "When nothing is going right, Go left!!...",
   "I love my job only when I'm on vacation...",
   "i'm not lazy, I'm just relaxed!!",
@@ -102,4 +105,15 @@ export default [
   "May the forks be with you",
   "A commit a day keeps the mobs away",
   "This is not a joke, it's a commit.",
+=======
+  "Making America... great... again...",
+  "Constructing additional pylons...",
+  "Roping some seaturtles...",
+  "Locating Jebediah Kerman...",
+  "We are not liable for any broken screens as a result of waiting.",
+  "Hello IT, have you tried turning it off and on again?",
+  "If you type Google into Google you can break the internet",
+  "Well, this is embarrassing.",
+  "Didn't know paint dried so quickly."
+>>>>>>> refs/remotes/1egoman/master
 ];
