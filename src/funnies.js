@@ -117,5 +117,6 @@ export default [
   "Well, this is embarrassing.",
   "Didn't know paint dried so quickly.",
   "Everything sounds the same",
-  "I'm going to walk the dog"
+  "I'm going to walk the dog",
+  "I didn't choose the engineering life. The engineering life chose me."
 ];
