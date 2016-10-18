@@ -107,7 +107,6 @@ export default [
   "May the forks be with you",
   "A commit a day keeps the mobs away",
   "This is not a joke, it's a commit.",
-=======
   "Making America... great... again...",
   "Constructing additional pylons...",
   "Roping some seaturtles...",
@@ -117,5 +116,6 @@ export default [
   "If you type Google into Google you can break the internet",
   "Well, this is embarrassing.",
   "Didn't know paint dried so quickly."
->>>>>>> refs/remotes/1egoman/master
+  "Everything sounds the same",
+  "I'm going to walk the dog"
 ];
