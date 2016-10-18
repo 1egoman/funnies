@@ -115,17 +115,7 @@ export default [
   "Hello IT, have you tried turning it off and on again?",
   "If you type Google into Google you can break the internet",
   "Well, this is embarrassing.",
-<<<<<<< HEAD
-  "Didn't know paint dried so quickly."
-<<<<<<< HEAD
->>>>>>> refs/remotes/1egoman/master
-=======
   "Didn't know paint dried so quickly.",
   "Everything sounds the same",
   "I'm going to walk the dog"
->>>>>>> refs/remotes/1egoman/master
-=======
-  "Everything sounds the same",
-  "I'm going to walk the dog"
->>>>>>> origin/master
 ];
