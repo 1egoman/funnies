@@ -118,5 +118,7 @@ export default [
   "Didn't know paint dried so quickly.",
   "Everything sounds the same",
   "I'm going to walk the dog",
-  "I didn't choose the engineering life. The engineering life chose me."
+  "I didn't choose the engineering life. The engineering life chose me.",
+  "Chuck Norris never git push. The repo pulls before.",
+  "Web developers do it with <style>"
 ];
