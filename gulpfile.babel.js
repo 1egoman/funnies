@@ -10,8 +10,8 @@ const paths = {
 
 const input = path.join(paths.src, 'index.js');
 const output = {
-  dev: path.join(paths.dest, 'bundle.js'),
-  prod: path.join(paths.dest, 'bundle.min.js'),
+  dev: path.join(paths.dest, 'funnies.js'),
+  prod: path.join(paths.dest, 'funnies.min.js'),
 };
 
 gulp.task('default', () => {
