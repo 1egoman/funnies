@@ -5,9 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha test/unit/index.js --compilers js:babel-register",
-    "build": "gulp production",
-    "release": "./node_modules/.bin/browserify src/ -o funnies.min.js -t [babelify] -t [uglifyify]",
-    "prepublish": "npm run build && npm run release"
+    "build": "gulp",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
