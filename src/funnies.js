@@ -125,5 +125,6 @@ export default [
   "Some days, you just can’t get rid of a bug!",
   "We’re going to need a bigger boat.",
   "Chuck Norris never git push. The repo pulls before.",
-  "Web developers do it with <style>"
+  "Web developers do it with <style>",
+  "I need to git pull --my-life-together"
 ];
