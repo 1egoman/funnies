@@ -120,4 +120,9 @@ export default [
   "I'm going to walk the dog",
   "I didn't choose the engineering life. The engineering life chose me.",
   "Spawn more Overlord!",
+  "If I’m not back in five minutes, just wait longer.",
+  "Some days, you just can’t get rid of a bug!",
+  "We’re going to need a bigger boat.",
+  "Chuck Norris never git push. The repo pulls before.",
+  "Web developers do it with <style>"
 ];
