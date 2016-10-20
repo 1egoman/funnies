@@ -126,5 +126,6 @@ export default [
   "We’re going to need a bigger boat.",
   "Chuck Norris never git push. The repo pulls before.",
   "Web developers do it with <style>",
-  "I need to git pull --my-life-together"
+  "I need to git pull --my-life-together",
+  "Java developers never RIP. They just get Garbage Collected."
 ];
