@@ -127,5 +127,11 @@ export default [
   "Chuck Norris never git push. The repo pulls before.",
   "Web developers do it with <style>",
   "I need to git pull --my-life-together",
-  "Java developers never RIP. They just get Garbage Collected."
+  "Java developers never RIP. They just get Garbage Collected.",
+  "Cracking military-grade encryption...",
+  "Simulating traveling salesman...",
+  "Proving P=NP...",
+  "Entangling superstrings...",
+  "Twiddling thumbs...",
+  "Searching for plot device...",
 ];
