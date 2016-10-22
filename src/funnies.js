@@ -1,4 +1,5 @@
 export default [
+  "The Funnies",
   "Reticulating splines...",
   "Generating witty dialog...",
   "Swapping time and space...",
@@ -115,6 +116,12 @@ export default [
   "Hello IT, have you tried turning it off and on again?",
   "If you type Google into Google you can break the internet",
   "Well, this is embarrassing.",
+  "Didn't know paint dried so quickly.",
+  "Hello, IT... Have you tried forcing an unexpected reboot?",
+  "They just toss us away like yesterday's jam.",
+  "They're fairly regular, the beatings, yes. I'd say we're on a bi-weekly beating.",
+  "The Elders of the Internet would never stand for it.",
+  "Space is invisible mind dust, and stars are but wishes.",
   "Didn't know paint dried so quickly.",
   "Everything sounds the same",
   "I'm going to walk the dog",
