@@ -1,6 +1,7 @@
 import path from 'path';
 import gulp from 'gulp';
 import browserify from 'browserify';
+import watchify from 'watchify';
 import babel from 'gulp-babel';
 import source from 'vinyl-source-stream';
 
@@ -14,6 +15,27 @@ const outputName = {
   dev: 'funnies.dev.js',
   prod: 'funnies.min.js',
 };
+
+gulp.task('watch', () => {
+  const opts = Object.assign({}, watchify.args, {
+    entries: [input],
+    debug: true,
+  });
+  const bundler = watchify(browserify(opts)); 
+  bundler.transform('babelify', {presets: ['es2015', 'react']});
+
+  function bundle() {
+    bundler.bundle()
+      .on('error', console.log)
+      .pipe(source(outputName.dev))
+      .pipe(gulp.dest(paths.dest));
+  }
+
+  bundle(bundler);
+
+  bundler.on('update', bundle);
+  bundler.on('log', console.log);
+});
 
 gulp.task('dev', () => {
   browserify(input)
