@@ -140,4 +140,14 @@ export default [
   "Entangling superstrings...",
   "Twiddling thumbs...",
   "Searching for plot device...",
+  "Trying to sort in O(n)...",
+  "Laughing at your pictures-i mean, loading...",
+  "Sending data to NS-i mean, our servers.",
+  "Looking for sense of humour, please hold on.",
+  "Please wait while the intern refills his coffee.",
+  "A different error message? Finally, some progress!",
+  "Hold on while we wrap up our git together...sorry",
+  "Please hold on as we reheat our coffee",
+  "Kindly hold on as we convert this bug to a feature...",
+  "Kindly hold on as our intern quits vim..."
 ];
