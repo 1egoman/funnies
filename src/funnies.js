@@ -151,4 +151,5 @@ export default [
   "Please hold on as we reheat our coffee",
   "Kindly hold on as we convert this bug to a feature...",
   "Kindly hold on as our intern quits vim...",
+  "Winter is coming...",
 ];
