@@ -153,7 +153,7 @@ export default [
   "Kindly hold on as we convert this bug to a feature...",
   "Kindly hold on as our intern quits vim...",
   "Winter is coming...",
-  "Installing dependancies",
+  "Installing dependencies",
   "Switching to the latest JS framework",
   "Distracted by cat gifs",
   "Finding someone to hold my beer",
@@ -161,6 +161,6 @@ export default [
   "@todo Insert witty loading message",
   "Let's hope it's worth the wait",
   "Aw, snap! Not..",
-  "Updating dependancies...",
+  "Updating dependencies...",
   "Loading funny message...",
 ];
