@@ -33,6 +33,7 @@ export default [
   "Follow the white rabbit",
   "Why don't you order a sandwich?",
   "While the satellite moves into position",
+  "keep calm and npm install",
   "The bits are flowing slowly today",
   "Dig on the 'X' for buried treasure... ARRR!",
   "It's still faster than you could draw it",
