@@ -10,6 +10,7 @@ export default [
   "Don't think of purple hippos...",
   "We need a new fuse...",
   "Have a good day.",
+  "Upgrading Windows, your PC will restart several times. Sit back and relax.",
   "640K ought to be enough for anybody",
   "The architects are still drafting",
   "The bits are breeding",
