@@ -160,5 +160,7 @@ export default [
   "BRB, working on my side project",
   "@todo Insert witty loading message",
   "Let's hope it's worth the wait",
-  "Aw, snap! Not.."
+  "Aw, snap! Not..",
+  "Updating dependancies...",
+  "Loading funny message...",
 ];
