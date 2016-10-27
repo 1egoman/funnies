@@ -33,6 +33,7 @@ export default [
   "Follow the white rabbit",
   "Why don't you order a sandwich?",
   "While the satellite moves into position",
+  "keep calm and npm install",
   "The bits are flowing slowly today",
   "Dig on the 'X' for buried treasure... ARRR!",
   "It's still faster than you could draw it",
@@ -153,7 +154,7 @@ export default [
   "Kindly hold on as we convert this bug to a feature...",
   "Kindly hold on as our intern quits vim...",
   "Winter is coming...",
-  "Installing dependancies",
+  "Installing dependencies",
   "Switching to the latest JS framework",
   "Distracted by cat gifs",
   "Finding someone to hold my beer",
@@ -161,5 +162,7 @@ export default [
   "@todo Insert witty loading message",
   "Let's hope it's worth the wait",
   "Aw, snap! Not..",
-  "Ordering 1s and 0s..."
+  "Ordering 1s and 0s...",
+  "Updating dependencies...",
+  "Loading funny message..."
 ];
