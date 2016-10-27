@@ -2,6 +2,8 @@ import { trigger, state, style, transition, animate, Directive, Attribute, Compo
 
 import * as funnies from '../../assets/funnies';
 
+const animationTime = 0.3;
+
 @Component({
   selector: 'app-funnies',
   template: `<div class="container">
@@ -39,7 +41,7 @@ import * as funnies from '../../assets/funnies';
         state('inactive', style({
             opacity: 0, transform: 'translateY(20px)'
         })),
-        transition('* => *', animate('.2s'))
+        transition('* => *', animate(animationTime + 's'))
     ])
 ]
 })
@@ -63,13 +65,13 @@ export class FunniesComponent implements OnInit {
   ngOnInit() {     
     this.funniesMessages = (this.customMessages && this.customMessages.length>0) ? this.customMessages : funnies.default;
     this.message = this.funniesMessages[this.count];
-    setTimeout(()=>{this.toggleState()}, (this.interval/5)*4)
+    setTimeout(()=>{this.toggleState()}, this.interval-(animationTime*1000))
     setInterval(()=>{
       this.count++      
       this.toggleState();      
       if(this.count>this.funniesMessages.length-1) this.count=0;
       this.message = this.funniesMessages[this.count];      
-      setTimeout(()=>{this.toggleState()}, (this.interval/5)*4)
+      setTimeout(()=>{this.toggleState()}, this.interval-(animationTime*1000))
     },this.interval)
   }
 
