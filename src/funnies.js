@@ -168,5 +168,6 @@ export default [
   "Aw, snap! Not..",
   "Ordering 1s and 0s...",
   "Updating dependencies...",
-  "Loading funny message..."
+  "Loading funny message...",
+  "Feel free to spin in your chair"
 ];
