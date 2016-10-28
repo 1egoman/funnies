@@ -77,6 +77,10 @@ export default [
   "Connecting Neurotoxin Storage Tank...",
   "Granting wishes...",
   "We are not liable for any broken screens as a result of waiting.",
+  "Time flies when you’re having fun.",
+  "Get some coffee and come back in ten minutes..",
+  "Spinning the hamster…",
+  "99 bottles of beer on the wall..",
   "Stay awhile and listen..",
   "Be careful not to step in the git-gui",
   "You shall not pass! yet..",
@@ -162,8 +166,8 @@ export default [
   "@todo Insert witty loading message",
   "Let's hope it's worth the wait",
   "Aw, snap! Not..",
+  "Ordering 1s and 0s...",
   "Updating dependencies...",
   "Loading funny message...",
-  "Aw, snap! Not..",
   "Feel free to spin in your chair"
 ];
