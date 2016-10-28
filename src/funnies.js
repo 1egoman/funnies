@@ -72,12 +72,10 @@ export default [
   "Cleaning off the cobwebs...",
   "Making sure all the i's have dots...",
   "We are not liable for any broken screens as a result of waiting.",
-<<<<<<< HEAD
   "Time flies when you’re having fun.",
   "Get some coffee and come back in ten minutes..",
   "Spinning the hamster…",
   "99 bottles of beer on the wall..",
-=======
   "Stay awhile and listen..",
   "You shall not pass! yet..",
   "Load it and they will come",
@@ -87,5 +85,4 @@ export default [
   "How did you get here?",
   "Wait, do you smell something burning?",
   "Computing the secret to life, the universe, and everything.",
->>>>>>> upstream/master
 ];
