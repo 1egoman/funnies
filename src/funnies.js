@@ -168,5 +168,7 @@ export default [
   "Aw, snap! Not..",
   "Ordering 1s and 0s...",
   "Updating dependencies...",
-  "Loading funny message..."
+  "Loading funny message...",
+  "It's 10:00pm. Do you know where your children are?",
+  "Waiting Daenerys say all her titles..."
 ];
