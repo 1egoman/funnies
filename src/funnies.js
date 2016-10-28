@@ -162,6 +162,7 @@ export default [
   "@todo Insert witty loading message",
   "Let's hope it's worth the wait",
   "Aw, snap! Not..",
+  "Ordering 1s and 0s...",
   "Updating dependencies...",
-  "Loading funny message...",
+  "Loading funny message..."
 ];
