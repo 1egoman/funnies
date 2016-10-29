@@ -173,5 +173,5 @@ export default [
   "What the what?",
   "format C: ...",
   "Forget you saw that password I just typed into the IM ...",
-  "What's under there ..."
+  "What's under there?"
 ];
