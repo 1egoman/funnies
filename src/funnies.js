@@ -169,5 +169,9 @@ export default [
   "Ordering 1s and 0s...",
   "Updating dependencies...",
   "Loading funny message...",
-  "Feel free to spin in your chair"
+  "Feel free to spin in your chair",
+  "What the what?",
+  "format C: ...",
+  "Forget you saw that password I just typed into the IM ...",
+  "What's under there?"
 ];
