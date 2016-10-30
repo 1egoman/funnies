@@ -1,37 +1,13 @@
-import { trigger, state, style, transition, animate, Directive, Attribute, Component, OnInit, Input } from '@angular/core';
+import { trigger, state, style, transition, animate, Component, OnInit, Input } from '@angular/core';
 
-import * as funnies from '../examples/angular/src/assets/funnies/index';
+//change this path to the path of Funnies class
+import * as funnies from '../../assets/funnies/index';
 
 var animationTime = 0.3;
 
 @Component({
     selector: 'app-funnies',
-    template: `<div class="container">
-                <div class="box">                  
-                  <h2  [@visibility]="visibility" id="funnies-text">{{message}}</h2>
-                </div>
-              </div>`,
-    styles: [`.container{
-                width:100%;
-                height:100%;
-                display: flex;    
-                align-items: center;
-                flex-direction: column;
-                justify-content: center;
-            }`,
-
-        `.box{
-                display: flex;    
-                align-items: center;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                width:90%;
-                height:30%;
-                background: #444;
-                color: #fff;
-                box-shadow: 0px 12px 31px -9px #333;
-            }`],
+    template: `<span  [@visibility]="visibility" id="funnies-text">{{message}}</span>`,
     animations: [
         trigger('visibility', [
             state('active', style({
@@ -51,19 +27,18 @@ export class FunniesComponent implements OnInit {
     private _funnies;
     @Input() interval = 8000;
     @Input() customMessages;
-    @Input() duration;
+    @Input() duration = 300;
 
     toggleState() {
         this.visibility = (this.visibility === 'active' ? 'inactive' : 'active');
     }
 
     constructor() {
-        animationTime = this.duration;
         this._funnies = new funnies.Funnies(this.customMessages);
     }
 
     ngOnInit() {
-        this.showMessage(true);
+        this.showMessage(true)
         setInterval(()=>{
             this.showMessage(false);
         },this.interval)
