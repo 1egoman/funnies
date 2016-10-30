@@ -51,19 +51,18 @@ export class FunniesComponent implements OnInit {
     private _funnies;
     @Input() interval = 8000;
     @Input() customMessages;
-    @Input() duration;
+    @Input() duration = 300;
 
     toggleState() {
         this.visibility = (this.visibility === 'active' ? 'inactive' : 'active');
     }
 
     constructor() {
-        animationTime = this.duration;
         this._funnies = new funnies.Funnies(this.customMessages);
     }
 
     ngOnInit() {
-        this.showMessage(true);
+        this.showMessage(true)
         setInterval(()=>{
             this.showMessage(false);
         },this.interval)
