@@ -7,6 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
-  inter = 1000;
-  // messages = ['test 1','test 2','test 3']
+  messages = ['test 1','test 2','test 3']
 }
