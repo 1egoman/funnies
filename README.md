@@ -24,7 +24,7 @@ ReactDOM.render(<FunniesComponent customMessages={["You're too funny", "Thinking
 Odan wrote a great [jQuery plugin](https://github.com/odan/funnies-jquery-plugin) for Funnies!
 ```javascript
 import $ from 'jquery';
-// (include js/jquery.funnies.js)
+// (include js/jquery.funnies.ts)
 
 $('element').funnies();
 ```
@@ -42,7 +42,7 @@ $('element').funnies();
 
 - **I want to add a funny message!**
 
-  Create a fork, add your message to `src/funnies.js`, then create a pull
+  Create a fork, add your message to `src/funnies.ts`, then create a pull
   request.
 
 - **Something isn't working properly.**
