@@ -49,6 +49,7 @@ export default [
   "Counting backwards from Infinity",
   "Don't panic...",
   "Embiggening Prototypes",
+  "Do not run! We are your friends!",
   "Do you come here often?",
   "Warning: Don't set yourself on fire.",
   "We're making you a cookie.",
