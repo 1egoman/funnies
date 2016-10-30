@@ -173,5 +173,8 @@ export default [
   "What the what?",
   "format C: ...",
   "Forget you saw that password I just typed into the IM ...",
-  "What's under there?"
+  "What's under there?",
+  "Your computer has a virus, it's name is Windows!",
+  "Go ahead, hold your breath and do ironman plank till loading complete",
+  "Bored of slow loading spinner, buy more RAM!"
 ];
