@@ -1,6 +1,6 @@
 import { trigger, state, style, transition, animate, Directive, Attribute, Component, OnInit, Input } from '@angular/core';
 
-import * as funnies from '../../assets/funnies/index';
+import * as funnies from '../examples/angular/src/assets/funnies/index';
 
 var animationTime = 0.3;
 
