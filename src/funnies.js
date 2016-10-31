@@ -173,6 +173,8 @@ export default [
   "Please wait... Consulting the manual...",
   "It is dark. You're likely to be eaten by a grue.",
   "Loading funny message...",
+  "It's 10:00pm. Do you know where your children are?",
+  "Waiting Daenerys say all her titles...",
   "Feel free to spin in your chair",
   "What the what?",
   "format C: ...",
