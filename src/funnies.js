@@ -51,6 +51,7 @@ export default [
   "Counting backwards from Infinity",
   "Don't panic...",
   "Embiggening Prototypes",
+  "Do not run! We are your friends!",
   "Do you come here often?",
   "Warning: Don't set yourself on fire.",
   "We're making you a cookie.",
@@ -170,5 +171,13 @@ export default [
   "Updating dependencies...",
   "Loading funny message...",
   "It's 10:00pm. Do you know where your children are?",
-  "Waiting Daenerys say all her titles..."
+  "Waiting Daenerys say all her titles...",
+  "Feel free to spin in your chair",
+  "What the what?",
+  "format C: ...",
+  "Forget you saw that password I just typed into the IM ...",
+  "What's under there?",
+  "Your computer has a virus, it's name is Windows!",
+  "Go ahead, hold your breath and do ironman plank till loading complete",
+  "Bored of slow loading spinner, buy more RAM!"
 ];
