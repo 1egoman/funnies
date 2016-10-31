@@ -177,5 +177,6 @@ export default [
   "What's under there?",
   "Your computer has a virus, it's name is Windows!",
   "Go ahead, hold your breath and do ironman plank till loading complete",
-  "Bored of slow loading spinner, buy more RAM!"
+  "Bored of slow loading spinner, buy more RAM!",
+  "Help, I'm trapped in a loader!"
 ];
