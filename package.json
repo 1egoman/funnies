@@ -74,8 +74,10 @@
     "babel-preset-react": "^6.5.0",
     "lodash": "^4.13.1",
     "radium": "^0.18.1",
-    "react": "^15.1.0",
     "react-addons-css-transition-group": "^15.1.0",
     "uglifyjs": "^2.4.10"
+  },
+  "peerDependencies": {
+    "react": "^15.1.0"
   }
 }
