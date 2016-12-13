@@ -84,8 +84,8 @@ gulp.task('example-watch', () => {
     bundler.bundle()
       .on('error', console.log)
       .pipe(source('docs/bundle.js'))
+      .pipe(connect.reload())
       .pipe(gulp.dest('docs/dist'))
-      .pipe(connect.reload());
   }
 
   bundle(bundler);
