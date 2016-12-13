@@ -4,8 +4,16 @@ import {
 } from '../src';
 
 // Funnies class
-let funnies = new Funnies();
-document.getElementById('funnies').innerHTML = funnies.message();
+// This is the non-react version
+document.addEventListener("DOMContentLoaded", function() {
+  let funnies = new Funnies();
+  function clickFunnyMessage() {
+    document.getElementById('funnies').innerHTML = funnies.message();
+  }
+
+  document.getElementById('reload-funny-message').onclick = clickFunnyMessage;
+  clickFunnyMessage();
+});
 
 // React
 import React from 'react';

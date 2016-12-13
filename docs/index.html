@@ -1,8 +1,43 @@
-<h1>Funnies</h1>
-<div class="container">
-  <li>Funnies: <div id="funnies"></div></li>
-  <li>React Component: <div id="react"></div></li>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="inner-wrapper">
+        <h1>Funnies</h1>
+        <p>
+          A flexible way to add funny loading messages to
+          webapps with optional react support.
+        </p>
+      </div>
+    </div>
+    <div class="header-bar">
+      <div class="inner-wrapper">
+        <iframe src="https://ghbtns.com/github-btn.html?user=1egoman&repo=funnies&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+        <span>&nbsp;</span>
+      </div>
+    </div>
 
-<script src="/dist/example/bundle.js"></script>
-<script src="http://localhost:35729/livereload.js?snipver=1"></script>
+    <h2>Javascript</h2>
+    <blockquote>
+      <span id="funny-message"></span>
+    </blockquote>
+    <pre>
+    import Funnies from 'funnies';
+    let funnies = new Funnies();
+    funnies.message(); // "The bits are breeding..."
+    </pre>
+    <button id="reload-funny-message">Reload</button>
+
+    <div class="container">
+      <li>Funnies: <div id="funnies"></div></li>
+      <li>React Component: <div id="react"></div></li>
+    </div>
+
+    <!-- the bundle and livereload code -->
+    <script src="/dist/docs/bundle.js"></script>
+    <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+  </body>
+</html>

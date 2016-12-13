@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700');
+
+@import 'normalize';
+$color: #FF0000;
+$second-color: lighten($color, 24%);
+
+body {
+  margin-top: -32px; // FIXME: where does this spacing come from?
+  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+}
+
+// The inner div that's fixed width
+@mixin make-wrapper($text-color: #FFFFFF) {
+  max-width: 400px;
+  margin: 0px auto;
+  color: $text-color;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header {
+  width: 100%;
+  height: 400px;
+  background-color: $color;
+
+  .inner-wrapper {
+    @include make-wrapper(#FFFFFF);
+    padding-top: 4em;
+
+    h1 { font-size: 3rem; }
+    p { font-size: 1.8rem; }
+  }
+}
+
+.header-bar {
+  width: 100%;
+  height: 72px;
+  background-color: $second-color;
+
+  .inner-wrapper {
+    @include make-wrapper;
+
+    span, iframe {
+      vertical-align: middle;
+      line-height: 72px;
+    }
+  }
+}
