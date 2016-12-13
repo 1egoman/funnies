@@ -4,6 +4,7 @@ import browserify from 'browserify';
 import watchify from 'watchify';
 import babel from 'gulp-babel';
 import source from 'vinyl-source-stream';
+import connect from 'gulp-connect';
 
 const paths = {
   src: './src',
@@ -28,7 +29,8 @@ gulp.task('watch', () => {
     bundler.bundle()
       .on('error', console.log)
       .pipe(source(outputName.dev))
-      .pipe(gulp.dest(paths.dest));
+      .pipe(gulp.dest(paths.dest))
+      .pipe(connect.reload());
   }
 
   bundle(bundler);
@@ -61,4 +63,44 @@ gulp.task('babel', () => {
     .pipe(gulp.dest(paths.dest))
 });
 
+// Kick off a server to run the example app
+gulp.task('example-server', () => {
+  connect.server({
+    root: 'example/',
+    livereload: true,
+  });
+});
+
+// Build the example app
+gulp.task('example-build', () => {
+  browserify('example/script.js')
+    .transform('babelify', {presets: ['es2015', 'react']})
+    .bundle()
+    .pipe(source('example/bundle.js'))
+    .pipe(gulp.dest('example/dist'));
+});
+
+gulp.task('example-watch', () => {
+  const opts = Object.assign({}, watchify.args, {
+    entries: 'example/script.js',
+    debug: true,
+  });
+  const bundler = watchify(browserify(opts)); 
+  bundler.transform('babelify', {presets: ['es2015', 'react']});
+
+  function bundle() {
+    bundler.bundle()
+      .on('error', console.log)
+      .pipe(source('example/bundle.js'))
+      .pipe(gulp.dest('example/dist'))
+      .pipe(connect.reload());
+  }
+
+  bundle(bundler);
+
+  bundler.on('update', bundle);
+  bundler.on('log', console.log);
+});
+
+gulp.task('example', ['example-server', 'example-watch', 'watch']);
 gulp.task('default', ['babel', 'dev', 'prod']);
