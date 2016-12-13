@@ -17,36 +17,11 @@ export default class FunniesComponent extends React.Component {
       }, props.interval);
     }
   }
-  cssTransitionStyles() {
-    return [
-      <Style
-        scopeSelector=".funnies-text.funnies-enter"
-        rules={styles.funniesText.funniesEnter}
-        key={0}
-      />,
-      <Style
-        scopeSelector=".funnies-text.funnies-enter-active"
-        rules={styles.funniesText.funniesEnterActive}
-        key={1}
-      />,
-      <Style
-        scopeSelector=".funnies-text.funnies-leave"
-        rules={styles.funniesText.funniesLeave}
-        key={2}
-      />,
-      <Style
-        scopeSelector=".funnies-text.funnies-leave-active"
-        rules={styles.funniesText.funniesLeaveActive}
-        key={3}
-      />,
-    ];
-  }
   componentWillUnmount() {
     clearTimeout(this.state.interval);
   }
   render() {
     return <div className="funnies">
-      {this.cssTransitionStyles()}
       <ReactCSSTransitionGroup
         transitionName="funnies"
         transitionEnterTimeout={200}

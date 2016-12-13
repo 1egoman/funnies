@@ -71,15 +71,7 @@ gulp.task('example-server', () => {
   });
 });
 
-// Build the example app
-gulp.task('example-build', () => {
-  browserify('example/script.js')
-    .transform('babelify', {presets: ['es2015', 'react']})
-    .bundle()
-    .pipe(source('example/bundle.js'))
-    .pipe(gulp.dest('example/dist'));
-});
-
+// Watch and build the example app
 gulp.task('example-watch', () => {
   const opts = Object.assign({}, watchify.args, {
     entries: 'example/script.js',
