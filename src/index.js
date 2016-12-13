@@ -4,7 +4,7 @@ import FunniesComponent from './react';
 
 class Funnies {
   constructor(messages=[]) {
-    this.messages = defaultMessages.concat(messages);
+    this.messages = _.shuffle(defaultMessages.concat(messages));
 
     // convert messages into a map of message to how many times it has been
     // used.

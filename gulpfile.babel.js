@@ -66,7 +66,7 @@ gulp.task('babel', () => {
 // Kick off a server to run the example app
 gulp.task('example-server', () => {
   connect.server({
-    root: 'example/',
+    root: 'docs/',
     livereload: true,
   });
 });
@@ -74,7 +74,7 @@ gulp.task('example-server', () => {
 // Watch and build the example app
 gulp.task('example-watch', () => {
   const opts = Object.assign({}, watchify.args, {
-    entries: 'example/script.js',
+    entries: 'docs/script.js',
     debug: true,
   });
   const bundler = watchify(browserify(opts)); 
@@ -83,8 +83,8 @@ gulp.task('example-watch', () => {
   function bundle() {
     bundler.bundle()
       .on('error', console.log)
-      .pipe(source('example/bundle.js'))
-      .pipe(gulp.dest('example/dist'))
+      .pipe(source('docs/bundle.js'))
+      .pipe(gulp.dest('docs/dist'))
       .pipe(connect.reload());
   }
 
