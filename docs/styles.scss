@@ -4,6 +4,7 @@
 @import 'font-awesome';
 $color: #FF0000;
 $second-color: lighten($color, 24%);
+$light-gray: #EEEEEE;
 
 body {
   margin-top: -32px; // FIXME: where does this spacing come from?
@@ -12,7 +13,7 @@ body {
 
 // The inner div that's fixed width
 @mixin make-wrapper($text-color: #FFFFFF) {
-  max-width: 400px;
+  max-width: 500px;
   margin: 0px auto;
   color: $text-color;
   padding-left: 10px;
@@ -51,6 +52,11 @@ body {
 .wrapper {
   @include make-wrapper(#333333);
 
+  h2 {
+    margin-top: 1em;
+    font-size: 2.8em;
+  }
+
   // Button style
   button {
     background-color: #DDDDDD;
@@ -70,15 +76,34 @@ body {
 .funnies-wrapper {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  height: 2em;
+  min-height: 2em;
 }
 
 // Each example is wrapped in one of these
 .live-example {
-  border-left: 3px solid $second-color;
+  border-left: 3px solid $light-gray;
+  border-right: 3px solid $light-gray;
   padding-left: 1.5em;
+  padding-right: 1.5em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 
   margin-bottom: 2em;
+}
+
+
+.funnies-text {
+  transition: opacity 250ms ease-in-out;
+}
+.funnies-text.funnies-enter {
+  opacity: 0;
+}
+.funnies-text.funnies-enter-active {
+  opacity: 0;
+}
+.funnies-text.funnies-leave {
+  display: none;
+}
+.funnies-text.funnies-leave-active {
+  opacity: 0;
 }

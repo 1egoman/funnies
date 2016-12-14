@@ -2622,7 +2622,7 @@ body {
   height: 400px;
   background-color: #FF0000; }
   .header .inner-wrapper {
-    max-width: 400px;
+    max-width: 500px;
     margin: 0px auto;
     color: #FFFFFF;
     padding-left: 10px;
@@ -2638,7 +2638,7 @@ body {
   height: 72px;
   background-color: #ff7a7a; }
   .header-bar .inner-wrapper {
-    max-width: 400px;
+    max-width: 500px;
     margin: 0px auto;
     color: #FFFFFF;
     padding-left: 10px;
@@ -2648,11 +2648,14 @@ body {
       line-height: 72px; }
 
 .wrapper {
-  max-width: 400px;
+  max-width: 500px;
   margin: 0px auto;
   color: #333333;
   padding-left: 10px;
   padding-right: 10px; }
+  .wrapper h2 {
+    margin-top: 1em;
+    font-size: 2.8em; }
   .wrapper button {
     background-color: #DDDDDD;
     border: 2px solid #333333;
@@ -2665,11 +2668,28 @@ body {
 .funnies-wrapper {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  height: 2em; }
+  min-height: 2em; }
 
 .live-example {
-  border-left: 3px solid #ff7a7a;
+  border-left: 3px solid #EEEEEE;
+  border-right: 3px solid #EEEEEE;
   padding-left: 1.5em;
+  padding-right: 1.5em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-bottom: 2em; }
+
+.funnies-text {
+  transition: opacity 250ms ease-in-out; }
+
+.funnies-text.funnies-enter {
+  opacity: 0; }
+
+.funnies-text.funnies-enter-active {
+  opacity: 0; }
+
+.funnies-text.funnies-leave {
+  display: none; }
+
+.funnies-text.funnies-leave-active {
+  opacity: 0; }
