@@ -7,7 +7,7 @@ export default class FunniesComponent extends React.Component {
   constructor(props) {
     super();
     this.state = {};
-    this.state.funnies = new Funnies(props.customMessages);
+    this.state.funnies = new Funnies(props.customMessages, props.options);
     this.state.message = this.state.funnies.message();
 
     // periodically, update the message to be something else
@@ -35,5 +35,5 @@ export default class FunniesComponent extends React.Component {
     </div>;
   }
 }
-FunniesComponent.defaultProps = {interval: 8000, customMessages: []};
+FunniesComponent.defaultProps = {interval: 8000, customMessages: [], options: {}};
 

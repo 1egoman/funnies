@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700');
 
 @import 'normalize';
+@import 'font-awesome';
 $color: #FF0000;
 $second-color: lighten($color, 24%);
 
@@ -45,4 +46,39 @@ body {
       line-height: 72px;
     }
   }
+}
+
+.wrapper {
+  @include make-wrapper(#333333);
+
+  // Button style
+  button {
+    background-color: #DDDDDD;
+    border: 2px solid #333333;
+    display: inline-block;
+  }
+
+  blockquote {
+    margin-left: 0px;
+    button {
+      margin-left: 0.5em;
+    }
+  }
+}
+
+// surround each funnies component with styles that are the same so they are consistient.
+.funnies-wrapper {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  height: 2em;
+}
+
+// Each example is wrapped in one of these
+.live-example {
+  border-left: 3px solid $second-color;
+  padding-left: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+  margin-bottom: 2em;
 }
