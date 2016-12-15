@@ -11,14 +11,18 @@ export default class FunniesComponent extends React.Component {
     this.state.message = this.state.funnies.message();
 
     // periodically, update the message to be something else
-    if (props.interval > 0) {
-      this.state.interval = setInterval(() => {
-        this.setState({ message: this.state.funnies.message() });
-      }, props.interval);
-    }
+    this.changeMessage(props);
   }
   componentWillUnmount() {
     clearTimeout(this.state.interval);
+  }
+  changeMessage(props=this.props) {
+    if (props.interval > 0) {
+      this.state.interval = setTimeout(() => {
+        this.setState({ message: this.state.funnies.message() });
+        this.state.interval = setTimeout(this.changeMessage.bind(this), props.interval);
+      }, props.interval);
+    }
   }
   render() {
     return <div className="funnies">

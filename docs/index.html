@@ -68,6 +68,20 @@ funnies.message(); // "baz"
         To keep users interested, the loading message is periodically refreshed (or if you'd rather,
         it can be turned off.)
       </p>
+        <h4>Props:</h4>
+        <ul>
+          <li>
+            <code>interval</code>: The amount of time before the current message changes.
+          </li>
+          <li>
+            <code>customMessages</code>: An array of custom messages to add into the funny message
+            list.
+          </li>
+          <li>
+            <code>options</code>: Options to pass through to the backing Funnies instance's
+            constructor. 
+          </li>
+        </ul>
       <div class="live-example">
         <h3>Minimal Usage</h3>
         <div class="funnies-wrapper" id="react-1"></div>
@@ -76,20 +90,6 @@ funnies.message(); // "baz"
 import {FunniesComponent} from 'funnies';
 ReactDOM.render(&lt;FunniesComponent /&gt;, elem);
         </pre>
-        <h4>Props:</h4>
-        <ul>
-          <li>
-            <code>interval</code>: The amount of time before the current message changes.
-          </li>
-          <li>
-            <code>customMessages</code>: An array of custom messages to add into the funyn message
-            list.
-          </li>
-          <li>
-            <code>options</code>: Options to pass through to the backing Funnies instance's
-            constructor. 
-          </li>
-        </ul>
       </div>
       <div class="live-example">
         <h3>Live-Updating Interval</h3>

@@ -66,11 +66,30 @@ let Wrapper = React.createClass({
       </span>
 
       <h4>Code:</h4>
-      <pre>
-        import {'{FunniesComponent}'} from 'funnies';<br/>
-        ReactDOM.render(<br/>
-        &nbsp;&nbsp;&lt;FunniesComponent <span>interval={'{'}{this.state.interval}{'}'}</span> /&gt;<br/>
-        , elem);
+      <pre>{`
+import {FunniesComponent} from 'funnies';
+const Wrapper = React.createClass({
+  getInitialState() {
+    return {interval: 1000};
+  },
+  update(interval) {
+    this.setState({interval: parseInt(interval)});
+  },
+  render() {
+    return <div>
+      <FunniesComponent interval={this.state.interval} />
+      <input
+        type="range"
+        min={0}
+        max={8000}
+        step={1000}
+        value={this.state.interval}
+        onChange={e => this.update(e.target.value)}
+      />
+    </div>;
+  }
+});
+        `}
       </pre>
     </div>;
   },
