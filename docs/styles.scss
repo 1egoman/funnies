@@ -16,6 +16,11 @@ p {
   line-height: 1.25;
 }
 
+pre {
+  max-width: 500px;
+  overflow-y: scroll;
+}
+
 // The inner div that's fixed width
 @mixin make-wrapper($text-color: #FFFFFF) {
   max-width: 500px;
@@ -96,9 +101,12 @@ p {
     }
   }
 
-  // emphesize code sections
-  pre span {
-    color: $color;
+  pre {
+    font-size: 0.8em;
+    // emphesize code sections
+    span {
+      color: $color;
+    }
   }
 }
 

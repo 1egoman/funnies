@@ -89,9 +89,10 @@ const Wrapper = React.createClass({
     </div>;
   }
 });
+ReactDOM.render(<Wrapper />, element);
         `}
       </pre>
     </div>;
   },
-})
+});
 ReactDOM.render(<Wrapper />, document.getElementById('react-2'));

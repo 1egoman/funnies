@@ -2620,6 +2620,10 @@ body {
 p {
   line-height: 1.25; }
 
+pre {
+  max-width: 500px;
+  overflow-y: scroll; }
+
 .header {
   width: 100%;
   height: 400px;
@@ -2679,8 +2683,10 @@ p {
     margin-right: 1em; }
     .funnies-wrapper input[type=range] + span {
       font-size: 80%; }
-  .funnies-wrapper pre span {
-    color: #FF0000; }
+  .funnies-wrapper pre {
+    font-size: 0.8em; }
+    .funnies-wrapper pre span {
+      color: #FF0000; }
 
 .live-example {
   border-left: 3px solid #EEEEEE;
