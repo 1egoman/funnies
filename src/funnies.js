@@ -62,6 +62,9 @@ export default [
   "I'm sorry Dave, I can't do that.",
   "Looking for exact change",
   "All your web browser are belong to us",
+  "All I really need is a kilobit.",
+  "I feel like im supposed to be loading something. . .",
+  "What do you call 8 Hobbits? A Hobbyte.",
   "Should have used a compiler language...",
   "Is this Windows?",
   "Adjusting flux capacitor...",
@@ -183,5 +186,5 @@ export default [
   "Your computer has a virus, it's name is Windows!",
   "Go ahead, hold your breath and do ironman plank till loading complete",
   "Bored of slow loading spinner, buy more RAM!",
-  "Help, I'm trapped in a loader!"
+  "Help, I'm trapped in a loader!",
 ];
