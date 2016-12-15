@@ -2617,6 +2617,9 @@ body {
   margin-top: -32px;
   font-family: 'Nunito Sans', Arial, Helvetica, sans-serif; }
 
+p {
+  line-height: 1.25; }
+
 .header {
   width: 100%;
   height: 400px;
@@ -2676,6 +2679,8 @@ body {
     margin-right: 1em; }
     .funnies-wrapper input[type=range] + span {
       font-size: 80%; }
+  .funnies-wrapper pre span {
+    color: #FF0000; }
 
 .live-example {
   border-left: 3px solid #EEEEEE;

@@ -11,6 +11,11 @@ body {
   font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
 }
 
+// describing paragraphs need some spacing
+p {
+  line-height: 1.25;
+}
+
 // The inner div that's fixed width
 @mixin make-wrapper($text-color: #FFFFFF) {
   max-width: 500px;
@@ -89,6 +94,11 @@ body {
     & + span {
       font-size: 80%;
     }
+  }
+
+  // emphesize code sections
+  pre span {
+    color: $color;
   }
 }
 
