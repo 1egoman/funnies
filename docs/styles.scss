@@ -77,6 +77,19 @@ body {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   min-height: 2em;
+
+  .funnies {
+    margin-bottom: 0.5em;
+  }
+
+  input[type=range] {
+    vertical-align: middle;
+    margin-right: 1em;
+
+    & + span {
+      font-size: 80%;
+    }
+  }
 }
 
 // Each example is wrapped in one of these

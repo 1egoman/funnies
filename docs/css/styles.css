@@ -2669,6 +2669,13 @@ body {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   min-height: 2em; }
+  .funnies-wrapper .funnies {
+    margin-bottom: 0.5em; }
+  .funnies-wrapper input[type=range] {
+    vertical-align: middle;
+    margin-right: 1em; }
+    .funnies-wrapper input[type=range] + span {
+      font-size: 80%; }
 
 .live-example {
   border-left: 3px solid #EEEEEE;

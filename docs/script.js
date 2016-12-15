@@ -51,11 +51,7 @@ let Wrapper = React.createClass({
   },
   render() {
     return <div className="funnies-wrapper">
-      <div>
-        <Component key={this.state.interval} interval={this.state.interval} />
-        <span>{this.state.interval / 1000} seconds</span>
-      </div>
-
+      <Component key={this.state.interval} interval={this.state.interval} />
       <input
         type="range"
         min={1000}
@@ -64,6 +60,8 @@ let Wrapper = React.createClass({
         value={this.state.interval}
         onChange={e => this.updateInterval(e.target.value)}
       />
+      <span>{this.state.interval / 1000} seconds</span>
+
       <h4>Code:</h4>
       <pre>
         import {'{FunniesComponent}'} from 'funnies';<br/>
