@@ -1,6 +1,7 @@
 node_modules/
 coverage/
 dist/
+!docs/dist/
 example/node_modules/
 
 *.sw*
