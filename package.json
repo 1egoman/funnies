@@ -80,6 +80,7 @@
     "uglifyjs": "^2.4.10"
   },
   "peerDependencies": {
-    "react": "^15.1.0"
+    "react": "^15.1.0",
+    "react-dom": "^15.4.1"
   }
 }
