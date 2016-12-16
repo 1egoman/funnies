@@ -2,7 +2,7 @@
 [![Dependency Status](https://david-dm.org/1egoman/funnies.svg)](https://david-dm.org/1egoman/funnies)
 [![devDependency Status](https://david-dm.org/1egoman/funnies/dev-status.svg)](https://david-dm.org/1egoman/funnies#info=devDependencies)
 
-![Funnies](https://1egoman.github.io/funnies/funnies.svg)
+<img src="https://1egoman.github.io/funnies/funnies.svg" width="200" />
 
 # Funnies
 A flexible way to add funny loading messages to webapps with optional react support.
