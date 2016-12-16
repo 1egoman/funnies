@@ -2626,7 +2626,6 @@ pre {
 
 .header {
   width: 100%;
-  height: 400px;
   background-color: #ff7f2a; }
   .header .inner-wrapper {
     max-width: 500px;
@@ -2635,10 +2634,25 @@ pre {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 4em; }
-    .header .inner-wrapper h1 {
-      font-size: 3rem; }
+    .header .inner-wrapper .name-wrapper img {
+      width: 50%;
+      margin-left: 25%; }
     .header .inner-wrapper p {
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      margin-bottom: 0px;
+      padding-bottom: 2em; }
+    @media (min-width: 500px) {
+      .header .inner-wrapper .name-wrapper {
+        display: flex;
+        height: 128px; }
+        .header .inner-wrapper .name-wrapper h1 {
+          font-size: 3rem;
+          flex: 1;
+          margin-left: 0.5em; }
+        .header .inner-wrapper .name-wrapper img {
+          height: 128px;
+          margin-left: 0px;
+          width: auto; } }
 
 .header-bar {
   width: 100%;
