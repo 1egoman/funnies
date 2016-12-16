@@ -21,6 +21,24 @@ pre {
   overflow-y: scroll;
 }
 
+// Button style
+button, .button {
+  background-color: #DDDDDD;
+  border: 2px solid #333333;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: default;
+  color: buttontext;
+  box-sizing: border-box;
+  padding: 2px 6px 3px;
+
+  &:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+}
+
+
 // The inner div that's fixed width
 @mixin make-wrapper($text-color: #FFFFFF) {
   max-width: 500px;
@@ -95,13 +113,6 @@ pre {
     font-size: 2.8em;
   }
 
-  // Button style
-  button {
-    background-color: #DDDDDD;
-    border: 2px solid #333333;
-    display: inline-block;
-  }
-
   blockquote {
     margin-left: 0px;
     button {
@@ -157,6 +168,10 @@ pre {
     text-align: center;
     padding: 1em;
   }
+}
+
+.btn {
+  height: 32px;
 }
 
 .funnies-text {

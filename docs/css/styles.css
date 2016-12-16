@@ -2624,6 +2624,19 @@ pre {
   max-width: 500px;
   overflow-y: scroll; }
 
+button, .button {
+  background-color: #DDDDDD;
+  border: 2px solid #333333;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: default;
+  color: buttontext;
+  box-sizing: border-box;
+  padding: 2px 6px 3px; }
+  button:focus, .button:focus {
+    outline: -webkit-focus-ring-color auto 5px; }
+
 .header {
   width: 100%;
   background-color: #ff7f2a; }
@@ -2677,10 +2690,6 @@ pre {
   .wrapper h2 {
     margin-top: 1em;
     font-size: 2.8em; }
-  .wrapper button {
-    background-color: #DDDDDD;
-    border: 2px solid #333333;
-    display: inline-block; }
   .wrapper blockquote {
     margin-left: 0px; }
     .wrapper blockquote button {
@@ -2717,6 +2726,9 @@ pre {
   .footer .wrapper {
     text-align: center;
     padding: 1em; }
+
+.btn {
+  height: 32px; }
 
 .funnies-text {
   transition: opacity 250ms ease-in-out; }
