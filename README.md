@@ -16,6 +16,8 @@ running `npm install && gulp examples`. This will start up a local server on por
 <br/>
 
 # Usage
+
+## Javascript
 ```javascript
 import Funnies from 'funnies';
 let funnies = new Funnies();
@@ -23,6 +25,7 @@ funnies.message(); // "Reticulating Splines..."
 funnies.message(); // "Generating witty dialog..."
 funnies.message(); // "Go ahead -- hold your breath!"
 ```
+
 ## React Component
 ![React rendering](https://raw.githubusercontent.com/1egoman/funnies/master/assets/normal-react.gif)
 ```jsx
