@@ -2627,7 +2627,7 @@ pre {
 .header {
   width: 100%;
   height: 400px;
-  background-color: #FF0000; }
+  background-color: #ff7f2a; }
   .header .inner-wrapper {
     max-width: 500px;
     margin: 0px auto;
@@ -2643,7 +2643,7 @@ pre {
 .header-bar {
   width: 100%;
   height: 72px;
-  background-color: #ff7a7a; }
+  background-color: #ffc9a4; }
   .header-bar .inner-wrapper {
     max-width: 500px;
     margin: 0px auto;
@@ -2686,7 +2686,7 @@ pre {
   .funnies-wrapper pre {
     font-size: 0.8em; }
     .funnies-wrapper pre span {
-      color: #FF0000; }
+      color: #ff7f2a; }
 
 .live-example {
   border-left: 3px solid #EEEEEE;
