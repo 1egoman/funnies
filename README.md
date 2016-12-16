@@ -20,6 +20,27 @@ ReactDOM.render(<FunniesComponent />, node);
 ReactDOM.render(<FunniesComponent interval={1000} />, node); // a new message every second
 ReactDOM.render(<FunniesComponent customMessages={["You're too funny", "Thinking really hard..."]} />, node); // Add a few of your own messages
 ```
+
+### React Styles
+Here's some css to properly animate funnies in the react component. Totally not required!
+```css
+.funnies-text {
+  transition: opacity 250ms ease-in-out;
+}
+.funnies-text.funnies-enter {
+  opacity: 0;
+}
+.funnies-text.funnies-enter-active {
+  opacity: 0;
+}
+.funnies-text.funnies-leave {
+  display: none;
+}
+.funnies-text.funnies-leave-active {
+  opacity: 0;
+}
+```
+
 ## jQuery
 Odan wrote a great [jQuery plugin](https://github.com/odan/funnies-jquery-plugin) for Funnies!
 ```javascript
