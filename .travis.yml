@@ -7,4 +7,4 @@ script: "npm test"
 
 before_install:
   # since it's a peerdependency it isn't pulled in unless it's installed as a dependency
-  npm install react
+  npm install react react-dom
