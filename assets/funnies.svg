@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1000"
+   width="372"
    height="300"
-   viewBox="0 0 1000.0001 299.99999"
+   viewBox="0 0 372.00004 299.99999"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r"
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="590.33814"
-     inkscape:cy="14.828533"
+     inkscape:cx="428.83814"
+     inkscape:cy="12.828533"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -68,7 +68,7 @@
          sodipodi:role="line"
          id="tspan4144"
          x="-13.275731"
-         y="375.784"></tspan></text>
+         y="375.784" /></text>
     <g
        id="g4209"
        transform="matrix(0.87960738,0,0,0.87960738,29.448058,46.994865)">
@@ -174,29 +174,5 @@
          d="m 187.11719,197.38281 c 94.59316,58.76617 189.0446,117.78175 283.72632,176.39208 5.38387,4.62219 2.91118,-3.65917 3.44165,-7.00818 0,-56.4613 0,-112.9226 0,-169.3839 -95.72266,0 -191.44531,0 -287.16797,0 z"
          style="opacity:0.075;fill:#353535;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:112.39318085px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="496.58856"
-       y="344.76495"
-       id="text4223"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4225"
-         x="496.58856"
-         y="344.76495"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bad Script';-inkscape-font-specification:'Bad Script'">Funnies</tspan></text>
-    <text
-       sodipodi:linespacing="125%"
-       id="text4231"
-       y="425.04358"
-       x="496.17841"
-       style="font-style:normal;font-weight:normal;font-size:38.49564743px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, '"
-         y="425.04358"
-         x="496.17841"
-         sodipodi:role="line"
-         id="tspan4235">Turn &quot;Please wait&quot; into a smile.</tspan></text>
   </g>
 </svg>
