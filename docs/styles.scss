@@ -122,6 +122,14 @@ pre {
   margin-bottom: 2em;
 }
 
+.footer {
+  background: $light-gray;
+  width: 100%;
+  .wrapper {
+    text-align: center;
+    padding: 1em;
+  }
+}
 
 .funnies-text {
   transition: opacity 250ms ease-in-out;

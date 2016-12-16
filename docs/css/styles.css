@@ -2697,6 +2697,13 @@ pre {
   padding-bottom: 0.5em;
   margin-bottom: 2em; }
 
+.footer {
+  background: #EEEEEE;
+  width: 100%; }
+  .footer .wrapper {
+    text-align: center;
+    padding: 1em; }
+
 .funnies-text {
   transition: opacity 250ms ease-in-out; }
 
