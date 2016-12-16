@@ -1,8 +1,14 @@
-![Funnies: Turn "Please Wait" into a smile.](https://cdn.rawgit.com/1egoman/funnies/master/assets/funnies.svg)
-
 [![Travis build status](http://img.shields.io/travis/1egoman/funnies.svg?style=flat)](https://travis-ci.org/1egoman/funnies)
 [![Dependency Status](https://david-dm.org/1egoman/funnies.svg)](https://david-dm.org/1egoman/funnies)
 [![devDependency Status](https://david-dm.org/1egoman/funnies/dev-status.svg)](https://david-dm.org/1egoman/funnies#info=devDependencies)
+
+# Funnies
+A flexible way to add funny loading messages to webapps with optional react support.
+
+# Examples and Demo
+As of funnies `1.2.0`, funnies ships with examples. Take a look at
+https://1egoman.github.io/funnies/ or build them locally by cloning down this repository, then
+running `npm install && gulp examples`. This will start up a local server on port 8080.
 
 # Usage
 ```javascript
