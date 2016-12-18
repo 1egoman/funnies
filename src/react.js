@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import {Style} from 'radium';
 import Funnies from './index';
 
 export default class FunniesComponent extends React.Component {
