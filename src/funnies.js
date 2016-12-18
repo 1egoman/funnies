@@ -127,6 +127,7 @@ export default [
   "If you type Google into Google you can break the internet",
   "Well, this is embarrassing.",
   "Didn't know paint dried so quickly.",
+  "What is the airspeed velocity of an unladen swallow?",
   "Hello, IT... Have you tried forcing an unexpected reboot?",
   "They just toss us away like yesterday's jam.",
   "They're fairly regular, the beatings, yes. I'd say we're on a bi-weekly beating.",
