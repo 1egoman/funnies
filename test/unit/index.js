@@ -1,5 +1,6 @@
 import Funnies from '../../src/index';
 import FunniesComponent from '../../src/react';
+import funnyMessages from '../../src/funnies';
 import TestUtils from 'react-addons-test-utils';
 import React from 'react';
 import assert from 'assert';
@@ -29,10 +30,45 @@ describe('Funnies', function() {
     assert.notEqual(second, third);
   });
 
+  it('should generate all messages when run to completion and not repeat', () => {
+    let customMessageFunnies = new Funnies();
+
+    // Try to generate all messages and make sure they both show up
+    let generatedPhrases = funnyMessages.slice();
+    for (let i = 0; i < funnyMessages.length; i++) {
+      // Generate the message
+      let message = customMessageFunnies.message();
+      // Delete it from the list of messages left
+      generatedPhrases.splice(generatedPhrases.indexOf(message), 1);
+    }
+
+    assert.deepEqual(generatedPhrases, []);
+  });
+
   it('should be able to use custom messages', () => {
     let customMessageFunnies = new Funnies(["message", "message2"]);
     assert.notEqual(customMessageFunnies.messages.indexOf("message"), -1);
     assert.notEqual(customMessageFunnies.messages.indexOf("message2"), -1);
+  });
+
+  it('should be able to use custom messages, and only custom messages', () => {
+    let customMessageFunnies = new Funnies(["message", "message2"], {appendMessages: false});
+
+    // Try to generate all messages and make sure they both show up
+    let firstGenerated = false, secondGenerated = false, runIterations = 0;
+    while (!(firstGenerated && secondGenerated)) {
+      // Generate the message
+      let message = customMessageFunnies.message();
+      // Populate the flags above
+      firstGenerated = firstGenerated || (message === 'message');
+      secondGenerated = secondGenerated || (message === 'message2');
+      // Increment the iteration we're on.
+      runIterations++;
+    }
+
+    assert(firstGenerated);
+    assert(secondGenerated);
+    assert.equal(runIterations, 2);
   });
 
   it('should return a html message', () => {

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Funnies</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.ie.min.css" />
+    <![endif]-->
+  </head>
+  <body>
+    <a class="github-fork-ribbon" href="https://github.com/1egoman/funnies" title="Fork me on GitHub">Fork me on GitHub</a>
+    <div class="header">
+      <div class="inner-wrapper">
+        <div class="name-wrapper">
+          <img src="funnies.svg" />
+          <h1>Funnies</h1>
+        </div>
+        <p>
+          A flexible way to add funny loading messages to
+          webapps with optional react support.
+        </p>
+      </div>
+    </div>
+    <div class="header-bar">
+      <div class="inner-wrapper">
+        <iframe src="https://ghbtns.com/github-btn.html?user=1egoman&repo=funnies&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+        <span>&nbsp;</span>
+        <a target="_blank" href="//github.com/1egoman/funnies/issues/6" class="button">Contribute your own funny message!</a>
+      </div>
+    </div>
+    <div class="wrapper">
+      <h2>Vanilla Javascript</h2>
+
+      <div class="live-example">
+        <h3>Minimal usage</h3>
+        <blockquote class="funnies-wrapper">
+          <span id="funny-message-1">...</span>
+          <button id="reload-funny-message-1">
+            <i class="fa fa-refresh"></i>
+          </button>
+        </blockquote>
+
+        <h4>Code:</h4>
+        <pre>
+import Funnies from 'funnies';
+let funnies = new Funnies();
+funnies.message(); // "Bending the spoon..."
+        </pre>
+      </div>
+
+      <div class="live-example">
+        <h3>Add your own custom messages:</h3>
+        <blockquote class="funnies-wrapper">
+          <span id="funny-message-2">...</span>
+          <button id="reload-funny-message-2">
+            <i class="fa fa-refresh"></i>
+          </button>
+        </blockquote>
+
+        <h4>Code:</h4>
+        <pre>
+import Funnies from 'funnies';
+let funnies = new Funnies([
+  "foo",
+  "bar",
+  "baz",
+  "hello",
+  "world",
+]);
+funnies.message(); // "baz"
+        </pre>
+      </div>
+
+      <h2>React</h2>
+      <p>
+        The funnies react component is a drop-in solution to create a simple loading indicator.
+        To keep users interested, the loading message is periodically refreshed (or if you'd rather,
+        this can be turned off.)
+      </p>
+        <h4>Props:</h4>
+        <ul>
+          <li>
+            <code>interval</code>: The amount of time before the current message changes.
+          </li>
+          <li>
+            <code>customMessages</code>: An array of custom messages to add into the funny message
+            list.
+          </li>
+          <li>
+            <code>options</code>: Options to pass through to the backing Funnies instance's
+            constructor. 
+          </li>
+        </ul>
+      <div class="live-example">
+        <h3>Minimal Usage</h3>
+        <div class="funnies-wrapper" id="react-1"></div>
+        <h4>Code:</h4>
+        <pre>
+import {FunniesComponent} from 'funnies';
+ReactDOM.render(&lt;FunniesComponent /&gt;, elem);
+        </pre>
+      </div>
+      <div class="live-example">
+        <h3>Live-Updating Interval</h3>
+        <div class="funnies-wrapper" id="react-2"></div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <div class="wrapper">
+        Funnies &copy; <a href="http://rgaus.net">Ryan Gaus</a> 2016. MIT Licensed.
+      </div>
+    </div>
+
+    <!-- the bundle and livereload code -->
+    <script src="dist/docs/bundle.js"></script>
+    <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+  </body>
+</html>
