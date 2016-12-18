@@ -24,14 +24,14 @@ export default class FunniesComponent extends React.Component {
     }
   }
   render() {
-    return <div className="funnies">
+    return <div className={this.props.className || 'funnies'}>
       <ReactCSSTransitionGroup
         transitionName="funnies"
         transitionEnterTimeout={200}
         transitionLeaveTimeout={200}
       >
         <span
-          className="funnies-text"
+          className={this.props.innerClassName || 'funnies-text'}
           key={this.state.message}
         >{this.state.message}</span>
       </ReactCSSTransitionGroup>
