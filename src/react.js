@@ -24,19 +24,24 @@ export default class FunniesComponent extends React.Component {
     }
   }
   render() {
-    return <div className={this.props.className || 'funnies'}>
+    return <div className={this.props.className}>
       <ReactCSSTransitionGroup
         transitionName="funnies"
         transitionEnterTimeout={200}
         transitionLeaveTimeout={200}
       >
         <span
-          className={this.props.innerClassName || 'funnies-text'}
+          className={this.props.innerClassName}
           key={this.state.message}
         >{this.state.message}</span>
       </ReactCSSTransitionGroup>
     </div>;
   }
 }
-FunniesComponent.defaultProps = {interval: 8000, customMessages: [], options: {}};
-
+FunniesComponent.defaultProps = {
+  className: 'funnies',
+  innerClassName: 'funnies-text',
+  interval: 8000,
+  customMessages: [],
+  options: {},
+};
