@@ -188,4 +188,5 @@ export default [
   "Go ahead, hold your breath and do ironman plank till loading complete",
   "Bored of slow loading spinner, buy more RAM!",
   "Help, I'm trapped in a loader!",
+  "What is the difference btwn a hippo and a zippo? One is really heavy, the other is a little lighter",
 ];
