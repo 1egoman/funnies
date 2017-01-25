@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700');
+
+@import 'normalize';
+@import 'font-awesome';
+$color: #ff7f2a;
+$second-color: lighten($color, 24%);
+$light-gray: #EEEEEE;
+
+body {
+  margin-top: -32px; // FIXME: where does this spacing come from?
+  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+}
+
+// describing paragraphs need some spacing
+p {
+  line-height: 1.25;
+}
+
+pre {
+  max-width: 500px;
+  overflow-y: scroll;
+}
+
+// Button style
+button, .button {
+  background-color: #DDDDDD;
+  border: 2px solid #333333;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: default;
+  color: buttontext;
+  box-sizing: border-box;
+  padding: 2px 6px 3px;
+
+  &:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+}
+
+
+// The inner div that's fixed width
+@mixin make-wrapper($text-color: #FFFFFF) {
+  max-width: 500px;
+  margin: 0px auto;
+  color: $text-color;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header {
+  width: 100%;
+  background-color: $color;
+
+  .inner-wrapper {
+    @include make-wrapper(#FFFFFF);
+    padding-top: 4em;
+
+    // center the icon at the top for small screens.
+    .name-wrapper img {
+      width: 50%;
+      margin-left: 25%;
+    }
+
+    p {
+      font-size: 1.8rem;
+      margin-bottom: 0px;
+      padding-bottom: 2em;
+    }
+
+    // For big screens!
+    @media (min-width: 500px) {
+      // make name wrapper a flexbox, and stick the image on the left.
+      .name-wrapper {
+        display: flex;
+        height: 128px;
+
+        h1 {
+          font-size: 3rem;
+          flex: 1;
+          margin-left: 0.5em;
+        }
+        img {
+          height: 128px;
+          margin-left: 0px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+.header-bar {
+  width: 100%;
+  height: 72px;
+  background-color: $second-color;
+
+  .inner-wrapper {
+    @include make-wrapper;
+
+    span, iframe {
+      vertical-align: middle;
+      line-height: 72px;
+    }
+  }
+}
+
+.wrapper {
+  @include make-wrapper(#333333);
+
+  h2 {
+    margin-top: 1em;
+    font-size: 2.8em;
+  }
+
+  blockquote {
+    margin-left: 0px;
+    button {
+      margin-left: 0.5em;
+    }
+  }
+}
+
+// surround each funnies component with styles that are the same so they are consistient.
+.funnies-wrapper {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  min-height: 2em;
+
+  .funnies {
+    margin-bottom: 0.5em;
+  }
+
+  input[type=range] {
+    vertical-align: middle;
+    margin-right: 1em;
+
+    & + span {
+      font-size: 80%;
+    }
+  }
+
+  pre {
+    font-size: 0.8em;
+    // emphesize code sections
+    span {
+      color: $color;
+    }
+  }
+}
+
+// Each example is wrapped in one of these
+.live-example {
+  border-left: 3px solid $light-gray;
+  border-right: 3px solid $light-gray;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+  margin-bottom: 2em;
+}
+
+.footer {
+  background: $light-gray;
+  width: 100%;
+  .wrapper {
+    text-align: center;
+    padding: 1em;
+  }
+}
+
+.btn {
+  height: 32px;
+}
+
+.funnies-text {
+  transition: opacity 250ms ease-in-out;
+}
+.funnies-text.funnies-enter {
+  opacity: 0;
+}
+.funnies-text.funnies-enter-active {
+  opacity: 0;
+}
+.funnies-text.funnies-leave {
+  display: none;
+}
+.funnies-text.funnies-leave-active {
+  opacity: 0;
+}
