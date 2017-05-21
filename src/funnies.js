@@ -126,7 +126,6 @@ export default [
   "Hello IT, have you tried turning it off and on again?",
   "If you type Google into Google you can break the internet",
   "Well, this is embarrassing.",
-  "Didn't know paint dried so quickly.",
   "What is the airspeed velocity of an unladen swallow?",
   "Hello, IT... Have you tried forcing an unexpected reboot?",
   "They just toss us away like yesterday's jam.",
