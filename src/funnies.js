@@ -188,4 +188,5 @@ export default [
   "Bored of slow loading spinner, buy more RAM!",
   "Help, I'm trapped in a loader!",
   "What is the difference btwn a hippo and a zippo? One is really heavy, the other is a little lighter",
+  "Please wait, while we purge the Decepticons for you. Yes, You can thanks us later!"
 ];
