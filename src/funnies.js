@@ -195,5 +195,6 @@ export default [
   "Downloading more RAM..",
   "Updating to Windows Vista...",
   "Deleting System32 folder",
-  "Hiding all ;'s in your code"
+  "Hiding all ;'s in your code",
+  "Shovelling coal into the server"
 ];
