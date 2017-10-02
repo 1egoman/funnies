@@ -196,6 +196,7 @@ export default [
   "Updating to Windows Vista...",
   "Deleting System32 folder",
   "Hiding all ;'s in your code",
+  "Alt-F4 speeds things up.",
   "Initializing the initializer...",
   "When was the last time you dusted around here?",
   "Optimizing the optimizer...",
