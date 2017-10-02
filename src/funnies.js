@@ -195,5 +195,10 @@ export default [
   "Downloading more RAM..",
   "Updating to Windows Vista...",
   "Deleting System32 folder",
-  "Hiding all ;'s in your code"
+  "Hiding all ;'s in your code",
+  "Initializing the initializer...",
+  "When was the last time you dusted around here?",
+  "Optimizing the optimizer...",
+  "Last call for the data bus! All aboard!",
+  "Running swag sticker detection..."
 ];
