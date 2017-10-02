@@ -193,5 +193,7 @@ export default [
   "Chuck Norris doesn’t wear a watch. HE decides what time it is.",
   "Mining some bitcoins...",
   "Downloading more RAM..",
-  "Updating to Windows Vista..."
+  "Updating to Windows Vista...",
+  "Delete System32 to speed up loading.",
+  "Alt-F4 speeds things up."
 ];
