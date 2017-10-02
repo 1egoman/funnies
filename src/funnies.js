@@ -196,5 +196,10 @@ export default [
   "Updating to Windows Vista...",
   "Deleting System32 folder",
   "Hiding all ;'s in your code",
-  "Shovelling coal into the server"
+  "When nothing is going right, go left!",
+  "Never let a computer know you're in a hurry.",
+  "A computer will do what you tell it to do, but that may be much different from what you had in mind.",
+  "Some things man was never meant to know. For everything else, there's Google.",
+  "Unix is user-friendly. It's just very selective about who its friends are."
+  "Shovelling coal into the server",
 ];
