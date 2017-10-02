@@ -194,6 +194,7 @@ export default [
   "Mining some bitcoins...",
   "Downloading more RAM..",
   "Updating to Windows Vista...",
-  "Delete System32 to speed up loading.",
+  "Deleting System32 folder",
+  "Hiding all ;'s in your code",
   "Alt-F4 speeds things up."
 ];
