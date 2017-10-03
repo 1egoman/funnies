@@ -207,4 +207,6 @@ export default [
   "Some things man was never meant to know. For everything else, there's Google.",
   "Unix is user-friendly. It's just very selective about who its friends are.",
   "Shovelling coal into the server",
+  "Pushing pixels...",
+  "How about this weather, eh?",
 ];
