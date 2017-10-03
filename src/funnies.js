@@ -209,4 +209,6 @@ export default [
   "Shovelling coal into the server",
   "Pushing pixels...",
   "How about this weather, eh?",
+  "Building a wall...",
+  "Everything is this universe is either a potato or not a potato",
 ];
