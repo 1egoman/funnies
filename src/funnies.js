@@ -211,4 +211,5 @@ export default [
   "How about this weather, eh?",
   "Building a wall...",
   "Everything is this universe is either a potato or not a potato",
+  "The severity of your issue is always lower than you expected.",
 ];
