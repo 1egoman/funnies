@@ -10,7 +10,7 @@ A flexible way to add funny loading messages to webapps with optional react supp
 # Examples and Demo
 As of funnies `1.2.0`, funnies ships with examples. Take a look at
 https://1egoman.github.io/funnies/ or build them locally by cloning down this repository, then
-running `npm install && gulp examples`. This will start up a local server on port 8080.
+running `npm install && gulp example`. This will start up a local server on port 8080.
 
 <br/>
 <br/>
