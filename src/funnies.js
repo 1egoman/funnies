@@ -212,4 +212,8 @@ export default [
   "Building a wall...",
   "Everything is this universe is either a potato or not a potato",
   "The severity of your issue is always lower than you expected.",
+  "Updating Updater...",
+  "Downloading Downloader...",
+  "Debugging Debugger...",
+  "Reading Terms and Conditions for you.",
 ];
