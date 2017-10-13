@@ -218,14 +218,14 @@ export default [
   "Reading Terms and Conditions for you.",
   "Digested cookies being baked again.",
   "Live long and prosper.",
-  "There is no cow level, but there's a goat one!"
-  "Deleting all your hidden porn..."
-  "Running with scissors..."
-  "Definitely not a virus..."
-  "You may call me Steve."
-  "All you had to do is to commit the damn funnies, CJ!"
-  "You seem like a nice person..."
-  "Coffee at my place, tommorow at 10A.M. - don't be late!"
-  "Work, work..."
-  "Patience! This is difficult, you know..."
+  "There is no cow level, but there's a goat one!",
+  "Deleting all your hidden porn...",
+  "Running with scissors...",
+  "Definitely not a virus...",
+  "You may call me Steve.",
+  "All you had to do is to commit the damn funnies, CJ!",
+  "You seem like a nice person...",
+  "Coffee at my place, tommorow at 10A.M. - don't be late!",
+  "Work, work...",
+  "Patience! This is difficult, you know...",
 ];
