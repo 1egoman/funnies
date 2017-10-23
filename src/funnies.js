@@ -80,7 +80,7 @@ export default [
   "Making sure all the i's have dots...",
   "We are not liable for any broken screens as a result of waiting.",
   "We need more dilithium crystals",
-  "Where did all th internets go",
+  "Where did all the internets go",
   "Connecting Neurotoxin Storage Tank...",
   "Granting wishes...",
   "We are not liable for any broken screens as a result of waiting.",
