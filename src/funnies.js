@@ -231,4 +231,5 @@ export default [
   "Coffee at my place, tommorow at 10A.M. - don't be late!",
   "Work, work...",
   "Patience! This is difficult, you know...",
+  "Discovering new ways of making you wait...",
 ];
