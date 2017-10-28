@@ -232,4 +232,7 @@ export default [
   "Work, work...",
   "Patience! This is difficult, you know...",
   "Discovering new ways of making you wait...",
+  "Sorry we are busy catching em' all, we're done soon",
+  "TODO: Insert elevator music",
+  "Still faster than Windows update"
 ];
