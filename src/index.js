@@ -3,8 +3,14 @@ import defaultMessages from './funnies';
 import FunniesComponent from './react';
 
 class Funnies {
-  constructor(messages=[]) {
-    this.messages = defaultMessages.concat(messages);
+  constructor(messages=[], opts={}) {
+    // Should messages be appended to what is already there or be used as a substitute?
+    opts.appendMessages = typeof opts.appendMessages === 'undefined' ? true : opts.appendMessages;
+    if (opts.appendMessages) {
+      this.messages = _.shuffle(defaultMessages.concat(messages));
+    } else {
+      this.messages = _.shuffle(messages);
+    }
 
     // convert messages into a map of message to how many times it has been
     // used.
