@@ -236,4 +236,7 @@ export default [
   "Time flies like an arrow; fruit flies like a banana",
   "Two men walked into a bar; the third ducked...",
   "Sooooo... Have you seen my vacation photos yet?",
+  "Sorry we are busy catching em' all, we're done soon",
+  "TODO: Insert elevator music",
+  "Still faster than Windows update",
 ];
