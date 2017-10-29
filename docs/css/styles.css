@@ -2699,8 +2699,20 @@ button, .button {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   min-height: 2em; }
+  .funnies-wrapper--input-container {
+    margin-bottom: 0.8em;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 0.8em; }
+    .funnies-wrapper--input-container--name {
+      font-size: 80%;
+      margin-right: 0.5em;
+      display: block;
+      margin-bottom: 0.5em; }
   .funnies-wrapper .funnies {
-    margin-bottom: 0.5em; }
+    margin-bottom: 1.5em;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 1em; }
   .funnies-wrapper input[type=range] {
     vertical-align: middle;
     margin-right: 1em; }

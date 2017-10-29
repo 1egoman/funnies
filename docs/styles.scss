@@ -127,8 +127,24 @@ button, .button {
   padding-bottom: 0.5em;
   min-height: 2em;
 
+  &--input-container {
+    margin-bottom: 0.8em;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 0.8em;
+    
+    &--name {
+      font-size: 80%;
+      margin-right: 0.5em;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+  }
+
   .funnies {
-    margin-bottom: 0.5em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 1em;
   }
 
   input[type=range] {

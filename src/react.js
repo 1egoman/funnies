@@ -27,8 +27,8 @@ export default class FunniesComponent extends React.Component {
     return <div className="funnies">
       <ReactCSSTransitionGroup
         transitionName="funnies"
-        transitionEnterTimeout={200}
-        transitionLeaveTimeout={200}
+        transitionEnterTimeout={this.props.transitionTimeout.enter}
+        transitionLeaveTimeout={this.props.transitionTimeout.leave}
       >
         <span
           className="funnies-text"
@@ -38,5 +38,12 @@ export default class FunniesComponent extends React.Component {
     </div>;
   }
 }
-FunniesComponent.defaultProps = {interval: 8000, customMessages: [], options: {}};
-
+FunniesComponent.defaultProps = {
+  interval: 8000,
+  transitionTimeout: {
+    enter: 200,
+    leave: 2000,    
+  },
+  customMessages: [],
+  options: {}
+};
