@@ -234,5 +234,8 @@ export default [
   "Discovering new ways of making you wait...",
   "Sorry we are busy catching em' all, we're done soon",
   "TODO: Insert elevator music",
-  "Still faster than Windows update"
+  "Still faster than Windows update",
+  "Is your body from McDonalds? Because i'm loving it",
+  "I changed all my passwords to 'Incorrect'. So whenever i forget, it will tell me 'Your password is incorrect'",
+  "I'm on a seafood diet. I see food and i eat it."
 ];
