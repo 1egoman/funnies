@@ -185,7 +185,7 @@ export default [
   "format C: ...",
   "Forget you saw that password I just typed into the IM ...",
   "What's under there?",
-  "Your computer has a virus, it's name is Windows!",
+  "Your computer has a virus, its name is Windows!",
   "Go ahead, hold your breath and do an ironman plank till loading complete",
   "Bored of slow loading spinner, buy more RAM!",
   "Help, I'm trapped in a loader!",
