@@ -238,4 +238,5 @@ export default [
   "Sorry we are busy catching em' all, we're done soon",
   "TODO: Insert elevator music",
   "Still faster than Windows update",
+  "Composer hack: Waiting for reqs to be fetched is less frustrating if you add -vvv to your command.",
 ];
