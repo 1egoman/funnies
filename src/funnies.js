@@ -98,7 +98,7 @@ export default [
   "How did you get here?",
   "Wait, do you smell something burning?",
   "Computing the secret to life, the universe, and everything.",
-  "When nothing is going right, Go left!!...",
+  "When nothing is going right, go left!!...",
   "I love my job only when I'm on vacation...",
   "i'm not lazy, I'm just relaxed!!",
   "Never steal. The government hates competition....",
