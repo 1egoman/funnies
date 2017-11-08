@@ -1,7 +1,5 @@
-import {
-  FunniesComponent as Component,
-  Funnies,
-} from '../src';
+import { Funnies } from '../src';
+import Component from '../src/react';
 
 // Funnies class
 // This is the non-react version
@@ -67,7 +65,7 @@ let Wrapper = React.createClass({
 
       <h4>Code:</h4>
       <pre>{`
-import {FunniesComponent} from 'funnies';
+import FunniesComponent from 'funnies/react';
 const Wrapper = React.createClass({
   getInitialState() {
     return {interval: 1000};

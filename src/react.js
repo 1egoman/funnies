@@ -40,3 +40,7 @@ export default class FunniesComponent extends React.Component {
 }
 FunniesComponent.defaultProps = {interval: 8000, customMessages: [], options: {}};
 
+// for browser support
+if (typeof window !== 'undefined') {
+  window.FunniesComponent = FunniesComponent;
+}

@@ -1,6 +1,5 @@
 import _ from 'lodash';
 import defaultMessages from './funnies';
-import FunniesComponent from './react';
 
 class Funnies {
   constructor(messages=[], opts={}) {
@@ -50,11 +49,9 @@ class Funnies {
 export {
   Funnies as default,
   Funnies,
-  FunniesComponent,
 };
 
 // for browser support
 if (typeof window !== 'undefined') {
   window.Funnies = Funnies;
-  window.FunniesComponent = FunniesComponent;
 }
