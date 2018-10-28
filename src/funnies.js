@@ -239,5 +239,17 @@ export default [
   "TODO: Insert elevator music",
   "Still faster than Windows update",
   "Composer hack: Waiting for reqs to be fetched is less frustrating if you add -vvv to your command.",
-  "Obfuscating quantum entaglement"
+  "Obfuscating quantum entaglement",
+  "Knock, Knock! Who’s there? Ken Ken who? Ken I come in? It's cold out here.",
+  "If at first you don't succeed, call it version 1.0.",
+  "I love pressing F5. It's so refreshing.",
+  "CAPS LOCK – Preventing Login Since 1980.",
+  "Chuck Norris doesn't scroll with a mouse. He uses a lion.",
+  "Chuck Norris can delete the Recycling Bin.",
+  "With just two toothpicks, a lightbulb, and his RoundHouse Kick, Chuck Norris can override the Pentagon's computer system.",
+  "If you see the Blue Screen of Death on your laptop... it's because Chuck Norris found out you were reading Chuck Norris jokes.",
+  "Chuck Norris didn't survive the first night in Minecraft, the first night survived Chuck Norris.",
+  "Chuck Norris could play cd-based games on his Nintendo 64.",
+  "Why did the computer get cold? Because it forgot to close windows.",
+  "Chuck Norris's keyboard doesn't have a Ctrl key because nothing controls Chuck Norris."
 ];
