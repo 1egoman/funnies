@@ -58,9 +58,8 @@
     "jshint-stylish": "^1.0.0",
     "mkdirp": "^0.5.0",
     "mocha": "^2.5.3",
-    "react": "^15.4.1",
-    "react-addons-test-utils": "^15.1.0",
-    "react-dom": "^15.4.1",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
     "sinon": "^1.12.2",
     "sinon-chai": "^2.7.0",
     "uglifyify": "^3.0.2",
@@ -77,10 +76,10 @@
   },
   "dependencies": {
     "lodash": "^4.13.1",
-    "react-addons-css-transition-group": "^15.1.0"
+    "react-transition-group": "1.2.0"
   },
   "peerDependencies": {
-    "react": "^15.1.0",
-    "react-dom": "^15.4.1"
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1"
   }
 }
