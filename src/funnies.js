@@ -251,5 +251,6 @@ export default [
   "Chuck Norris didn't survive the first night in Minecraft, the first night survived Chuck Norris.",
   "Chuck Norris could play cd-based games on his Nintendo 64.",
   "Why did the computer get cold? Because it forgot to close windows.",
-  "Chuck Norris's keyboard doesn't have a Ctrl key because nothing controls Chuck Norris."
+  "Chuck Norris's keyboard doesn't have a Ctrl key because nothing controls Chuck Norris.",
+  "Preventing robot uprising ..."
 ];
