@@ -15,7 +15,7 @@ const paths = {
 const input = path.join(paths.src, 'index.js');
 const outputName = {
   dev: 'funnies.dev.js',
-  prod: 'funnies.min.js',
+  production: 'funnies.min.js',
 };
 
 gulp.task('watch', () => {
@@ -41,20 +41,20 @@ gulp.task('watch', () => {
 });
 
 gulp.task('dev', () => {
-  browserify(input)
+  return browserify(input)
     .transform('babelify', {presets: ['es2015', 'react']})
     .bundle()
     .pipe(source(outputName.dev))
     .pipe(gulp.dest(paths.dest));
 });
 
-gulp.task('prod', () => {
-  browserify(input)
+gulp.task('production', () => {
+  return browserify(input)
     .transform('envify', {global: true, _: 'purge', NODE_ENV: 'production'})
     .transform('babelify', {presets: ['es2015', 'react']})
     .transform('uglifyify', {global: true})
     .bundle()
-    .pipe(source(outputName.prod))
+    .pipe(source(outputName.production))
     .pipe(gulp.dest(paths.dest));
 });
 
@@ -96,7 +96,7 @@ gulp.task('example-watch-js', () => {
 });
 
 gulp.task('example-watch-scss', () => {
-  return gulp.watch('docs/*.scss', ['example-build-scss'])
+  return gulp.watch('docs/*.scss', gulp.series('example-build-scss'))
 });
 
 gulp.task('example-build-scss', () => {
@@ -107,11 +107,11 @@ gulp.task('example-build-scss', () => {
   .pipe(connect.reload());
 })
 
-gulp.task('example', [
+gulp.task('example', gulp.parallel(
   'example-server',
   'example-watch-js',
   'example-build-scss',
   'example-watch-scss',
   'watch',
-]);
-gulp.task('default', ['babel', 'dev', 'prod']);
+));
+gulp.task('default', gulp.series('babel', 'dev', 'production'));

@@ -42,7 +42,7 @@
     "del": "^1.1.1",
     "envify": "^3.4.1",
     "growl": "^1.10.5",
-    "gulp": "^3.8.10",
+    "gulp": "^4.0.2",
     "gulp-babel": "^6.0.0",
     "gulp-connect": "^5.0.0",
     "gulp-istanbul": "^0.6.0",
@@ -64,7 +64,7 @@
     "sinon-chai": "^2.7.0",
     "uglifyify": "^3.0.2",
     "uglifyjs": "^2.4.10",
-    "vinyl-source-stream": "^1.1.0",
+    "vinyl-source-stream": "^2.0.0",
     "watchify": "^3.7.0"
   },
   "nodeBoilerplateOptions": {
