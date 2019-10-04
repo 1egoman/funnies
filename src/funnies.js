@@ -256,5 +256,6 @@ export default [
   "Hacking into the Main Frame...",
   "Installing virus...",
   "Loading Error...",
-  "Waiting for something to load sucks..."
+  "Waiting for something to load sucks...",
+  "Deleting system32..."
 ];
