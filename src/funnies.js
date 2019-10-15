@@ -258,5 +258,7 @@ export default [
   "Loading Error...",
   "PC LOAD LETTER...",
   "Waiting for something to load sucks...",
-  "Deleting system32..."
+  "Deleting system32...",
+  "- What are you working? - I'm a programmer. - More precisely? - At home, I change TV programs.",
+  "New LG Refrigerators with Windows 10 ... 'A cold brandy pleats!' - Server Error 404, no Brandy available."
 ];
