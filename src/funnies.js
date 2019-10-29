@@ -262,5 +262,8 @@ export default [
   "- What are you working? - I'm a programmer. - More precisely? - At home, I change TV programs.",
   "New LG Refrigerators with Windows 10 ... 'A cold brandy pleats!' - Server Error 404, no Brandy available.",
   "Oh, are you waiting for me?",
-  "Do you smell carrots? -a snowman"
+  "Do you smell carrots? -a snowman",
+  "That job was a piece of cake",
+  "Oh you are an eager beaver",
+  "He makes a monkey business"
 ];
