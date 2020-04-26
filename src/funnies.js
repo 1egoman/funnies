@@ -265,5 +265,6 @@ export default [
   "Do you smell carrots? -a snowman",
   "That job was a piece of cake",
   "Oh you are an eager beaver",
-  "He makes a monkey business"
+  "He makes a monkey business",
+  "The Game - you just lost it.",
 ];
