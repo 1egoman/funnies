@@ -267,4 +267,5 @@ export default [
   "Oh you are an eager beaver",
   "He makes a monkey business",
   "The Game - you just lost it.",
+  "Why did the computer cross the road? To get to the other side of the loading screen!",
 ];
